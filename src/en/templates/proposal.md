@@ -23,7 +23,7 @@ A very short, maybe three sentence summary of what this proposal is about. A hig
 
 Summarize any information that is needed to contextualize the proposed changes, e.g. the current state of the game.
 
-Also link any relevant discussions on Discord, GitHub, or HackMD that are relevant to the proposal.
+Also link any relevant discussions on Discord, GitHub, or anywhere else that are relevant to the proposal.
 
 ## The rest?
 
