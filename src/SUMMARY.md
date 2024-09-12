@@ -1,7 +1,7 @@
-Space Wizards Development Wiki
+Goob Station Docs
 =====================
 
-[The Robust Book](index.md)
+[Goob Station Docs](index.md)
 
 Meta
 ====
@@ -19,7 +19,7 @@ General Development
 - [Setup](en/general-development/setup.md)
   - [How do I code?](en/general-development/setup/howdoicode.md)
   - [Setting up a Development Environment](en/general-development/setup/setting-up-a-development-environment.md)
-  - [Git for the SS14 Developer](en/general-development/setup/git-for-the-ss14-developer.md)
+  - [Git for the GS14 Developer](en/general-development/setup/git-for-the-ss14-developer.md)
   - [Server Hosting Tutorial](en/general-development/setup/server-hosting-tutorial.md)
 - [Codebase Info](en/general-development/codebase-info.md)
   - [Conventions](en/general-development/codebase-info/conventions.md)
@@ -40,12 +40,12 @@ General Development
 - [Work Groups](en/general-development/work-groups.md)
 - [Contributing Translations](en/general-development/contributing-translations.md)
 
-SS14 By Example
+GS14 By Example
 ===============
 
 ----------------------
 
-- [Introduction to SS14 By Example](en/ss14-by-example/introduction-to-ss14-by-example.md)
+- [Introduction to GS14 By Example](en/ss14-by-example/introduction-to-ss14-by-example.md)
 - [Adding a Simple Bikehorn](en/ss14-by-example/adding-a-simple-bikehorn.md)
 - [Making a Sprite Dynamic](en/ss14-by-example/making-a-sprite-dynamic.md)
   - [Porting Appearance Visualizers](en/ss14-by-example/making-a-sprite-dynamic/porting-appearance-visualizers.md)
@@ -53,51 +53,7 @@ SS14 By Example
 - [Fluent and Localization](en/ss14-by-example/fluent-and-localization.md)
 - [UI Survival Guide](en/ss14-by-example/ui-survival-guide.md)
 
-
-Robust Toolbox
-==============
-
-----------------------
-
-- [ECS](en/robust-toolbox/ecs.md)
-- [Netcode]()
-  - [Net Entities](en/robust-toolbox/netcode/net-entities.md)
-  - [Potentially Visible Set]()
-- [Coordinate Systems](en/robust-toolbox/coordinate-systems.md)
-- [Transform]()
-  - [Entity Coordinates](en/robust-toolbox/transform/entity-coordinates.md)
-  - [Physics](en/robust-toolbox/transform/physics.md)
-  - [Grids](en/robust-toolbox/transform/grids.md)
-- [Toolshed](en/robust-toolbox/toolshed.md)
-  - [Types](en/robust-toolbox/toolshed/types.md)
-  - [Toolshed and (S)CSI](en/robust-toolbox/toolshed/toolshed-and-scsi.md)
-  - [Environments](en/robust-toolbox/toolshed/environments.md)
-  - [Invocation contexts](en/robust-toolbox/toolshed/invocation-contexts.md)
-  - [Commands](en/robust-toolbox/toolshed/commands.md)
-    - [Entities](en/robust-toolbox/toolshed/commands/entity-control.md)
-    - [General](en/robust-toolbox/toolshed/commands/general.md)
-    - [Miscellaneous](en/robust-toolbox/toolshed/commands/misc.md)
-  - [Toolshed Examples](en/robust-toolbox/toolshed/toolshed-examples.md)
-- [User Interface](en/robust-toolbox/user-interface.md)
-- [IoC](en/robust-toolbox/ioc.md)
-- [Rendering]()
-  - [Lighting and FoV](en/robust-toolbox/rendering/lighting-and-fov.md)
-  - [Shaders](en/robust-toolbox/rendering/shaders.md)
-  - [Sprites and Icons](en/robust-toolbox/rendering/sprites-and-icons.md)
-- [Serialization](en/robust-toolbox/serialization.md)
-- [Sandboxing](en/robust-toolbox/sandboxing.md)
-- [Content Manifests](en/robust-toolbox/content-manifests.md)
-- [User Data Directory](en/robust-toolbox/user-data-directory.md)
-- [Robust Modules](en/robust-toolbox/robust-modules.md)
-- [Server HTTP API](en/robust-toolbox/server-http-api.md)
-- [Build Configurations](en/robust-toolbox/build-configurations.md)
-- [Preprocessor Defines](en/robust-toolbox/preprocessor-defines.md)
-- [MIDI](en/robust-toolbox/midi.md)
-- [Automatic Client Zip (ACZ)](en/robust-toolbox/acz.md)
-- [Asset Packaging](en/robust-toolbox/asset-packaging.md)
-- [Publishing a new Robust Toolbox Version](en/robust-toolbox/publishing-robusttoolbox.md)
-
-Space Station 14
+Goob Station 14
 ================
 
 ----------------------
@@ -121,7 +77,57 @@ Space Station 14
 		- [Reagents](en/space-station-14/core-tech/chemistry/reagents.md)
 		- [Solution Containers](en/space-station-14/core-tech/chemistry/solution-containers.md)
 
-	- [Proposals]()
+Server Hosting
+==============
+
+----------------------
+
+- [Port Forwarding](en/server-hosting/port-forwarding.md)
+- [Server Replay Recording](en/server-hosting/server-replay-recording.md)
+- [Setting up Robust.Cdn](en/server-hosting/setting-up-robust-cdn.md)
+- [Setting up SS14.Admin](en/server-hosting/setting-up-ss14-admin.md)
+- [Setting up SS14.Changelog](en/server-hosting/setting-up-ss14-changelog.md)
+- [Setting up SS14.Watchdog](en/server-hosting/setting-up-ss14-watchdog.md)
+- [OAuth](en/server-hosting/oauth.md)
+- [Setting up a Discord Bot](en/server-hosting/setting-up-redbot.md)
+- [Maintenance]()
+  - [Debugging server lockups](en/server-hosting/maintenance/debugging-server-lockups.md)
+
+Staff
+==============
+
+----------------------
+
+- [Maintainer List](en/community/space-wizards-maintainer-list.md)
+- [Admin List](en/community/goob-station-admin-list.md)
+- [Maintainer Policy](en/staff/maintainer-policy.md)
+- [Admin](en/community/admin.md)
+  - [Admin Tooling](en/community/admin/admin-tooling.md)
+    - [Admin Command Cookbook](en/community/admin/admin-tooling/admin-command-cookbook.md)
+  - [Goob Station Admin Policy](en/community/admin/wizards-den-admin-policy.md)
+  - [Goob Station Banning Policy](en/community/admin/wizards-den-banning-policy.md)
+
+Space Wizards
+========================
+
+Miscallaneous
+==============
+
+----------------------
+
+- [Infrastructure References](en/community/infrastructure-references.md)
+  - [Wizards Den Infrastructure](en/community/infrastructure-reference/wizards-den-infrastructure.md)
+  - [Publishing Scripts](en/community/infrastructure-reference/publishing-scripts.md)
+  - [Grafana Dashboards](en/community/infrastructure-reference/grafana-dashboards.md)
+- [Discord Rich Presence Repository](en/community/discord-rich-presence-repository.md)
+- [Progress Report Creation](en/community/progress-report-creation.md)
+
+Space Wizards Proposals
+================
+
+----------------------
+
+- [Proposals]()
 
 - [Accessibility](en/space-station-14/accessibility.md)
 	- [PR Guidelines](en/space-station-14/accessibility/guidelines.md)
@@ -202,9 +208,8 @@ Space Station 14
 
 	- [Cargo/Salvage](en/space-station-14/departments/cargo-salvage.md)
 		- [PR Guidelines](en/space-station-14/departments/cargo-salvage/guidelines.md)
-	
-          - [Proposals]()
-            - [Salvage Proposal](en/space-station-14/departments/cargo-salvage/proposals/salvage-proposal.md)
+        - [Proposals]()
+          - [Salvage Proposal](en/space-station-14/departments/cargo-salvage/proposals/salvage-proposal.md)
 
 	- [Command](en/space-station-14/departments/command.md)
 		- [PR Guidelines](en/space-station-14/departments/command/guidelines.md)
@@ -249,28 +254,66 @@ Space Station 14
    		- [Librarian Gameplay](en/space-station-14/departments/service/proposals/theshued-librarian-gameplay.md)
       - [Joker Roles](en/space-station-14/departments/service/proposals/joker_roles.md)
 
-General Proposals
-================
+  - [Robust Hub](en/general-proposals/robusthub.md)
 
-----------------------
-
-- [Robust Hub](en/general-proposals/robusthub.md)
-
-Server Hosting
+Robust Toolbox
 ==============
 
 ----------------------
 
-- [Port Forwarding](en/server-hosting/port-forwarding.md)
-- [Server Replay Recording](en/server-hosting/server-replay-recording.md)
-- [Setting up Robust.Cdn](en/server-hosting/setting-up-robust-cdn.md)
-- [Setting up SS14.Admin](en/server-hosting/setting-up-ss14-admin.md)
-- [Setting up SS14.Changelog](en/server-hosting/setting-up-ss14-changelog.md)
-- [Setting up SS14.Watchdog](en/server-hosting/setting-up-ss14-watchdog.md)
-- [OAuth](en/server-hosting/oauth.md)
-- [Setting up a Discord Bot](en/server-hosting/setting-up-redbot.md)
-- [Maintenance]()
-  - [Debugging server lockups](en/server-hosting/maintenance/debugging-server-lockups.md)
+- [ECS](en/robust-toolbox/ecs.md)
+- [Netcode]()
+  - [Net Entities](en/robust-toolbox/netcode/net-entities.md)
+  - [Potentially Visible Set]()
+- [Coordinate Systems](en/robust-toolbox/coordinate-systems.md)
+- [Transform]()
+  - [Entity Coordinates](en/robust-toolbox/transform/entity-coordinates.md)
+  - [Physics](en/robust-toolbox/transform/physics.md)
+  - [Grids](en/robust-toolbox/transform/grids.md)
+- [Toolshed](en/robust-toolbox/toolshed.md)
+  - [Types](en/robust-toolbox/toolshed/types.md)
+  - [Toolshed and (S)CSI](en/robust-toolbox/toolshed/toolshed-and-scsi.md)
+  - [Environments](en/robust-toolbox/toolshed/environments.md)
+  - [Invocation contexts](en/robust-toolbox/toolshed/invocation-contexts.md)
+  - [Commands](en/robust-toolbox/toolshed/commands.md)
+    - [Entities](en/robust-toolbox/toolshed/commands/entity-control.md)
+    - [General](en/robust-toolbox/toolshed/commands/general.md)
+    - [Miscellaneous](en/robust-toolbox/toolshed/commands/misc.md)
+  - [Toolshed Examples](en/robust-toolbox/toolshed/toolshed-examples.md)
+- [User Interface](en/robust-toolbox/user-interface.md)
+- [IoC](en/robust-toolbox/ioc.md)
+- [Rendering]()
+  - [Lighting and FoV](en/robust-toolbox/rendering/lighting-and-fov.md)
+  - [Shaders](en/robust-toolbox/rendering/shaders.md)
+  - [Sprites and Icons](en/robust-toolbox/rendering/sprites-and-icons.md)
+- [Serialization](en/robust-toolbox/serialization.md)
+- [Sandboxing](en/robust-toolbox/sandboxing.md)
+- [Content Manifests](en/robust-toolbox/content-manifests.md)
+- [User Data Directory](en/robust-toolbox/user-data-directory.md)
+- [Robust Modules](en/robust-toolbox/robust-modules.md)
+- [Server HTTP API](en/robust-toolbox/server-http-api.md)
+- [Build Configurations](en/robust-toolbox/build-configurations.md)
+- [Preprocessor Defines](en/robust-toolbox/preprocessor-defines.md)
+- [MIDI](en/robust-toolbox/midi.md)
+- [Automatic Client Zip (ACZ)](en/robust-toolbox/acz.md)
+- [Asset Packaging](en/robust-toolbox/asset-packaging.md)
+- [Publishing a new Robust Toolbox Version](en/robust-toolbox/publishing-robusttoolbox.md)
+
+Engine Development
+==============
+
+------------------
+
+- [Testing against launcher](en/engine-development/testing-against-launcher.md)
+- [Updating CEF](en/engine-development/updating-cef.md)
+
+Specifications
+==============
+
+----------------------
+
+- [Robust Station Image](en/specifications/robust-station-image.md)
+- [Robust Generic Attribution](en/specifications/robust-generic-attribution.md)
 
 Other Projects
 ==============
@@ -281,108 +324,3 @@ Other Projects
   - [Content Bundles](en/other-projects/launcher/content-bundles.md)
   - [Delta Updates & Manifests](en/other-projects/launcher/delta-updates-and-manifests.md)
 - [SpaceWizards Lidgren]()
-
-Specifications
-==============
-
-----------------------
-
-- [Robust Station Image](en/specifications/robust-station-image.md)
-- [Robust Generic Attribution](en/specifications/robust-generic-attribution.md)
-
-Community
-========================
-
-----------------------
-
-- [Infrastructure References](en/community/infrastructure-references.md)
-  - [Wizards Den Infrastructure](en/community/infrastructure-reference/wizards-den-infrastructure.md)
-  - [Publishing Scripts](en/community/infrastructure-reference/publishing-scripts.md)
-  - [Grafana Dashboards](en/community/infrastructure-reference/grafana-dashboards.md)
-- [Space Wizards Hub Rules](en/community/space-wizards-hub-rules.md)
-- [Space Wizards Role Hierarchy](en/community/space-wizards-role-hierarchy.md)
-- [Space Wizards Maintainer List](en/community/space-wizards-maintainer-list.md)
-- [Discord Rich Presence Repository](en/community/discord-rich-presence-repository.md)
-- [Project Manager](en/community/projectmanager.md)
-- [Maintainer](en/community/maintainer.md)
-  - [Review Policy](en/community/maintainer/wizards-den-review-policy.md)
-- [Admin](en/community/admin.md)
-  - [Admin Tooling](en/community/admin/admin-tooling.md)
-    - [Admin Command Cookbook](en/community/admin/admin-tooling/admin-command-cookbook.md)
-  - [Wizards Den Admin Policy](en/community/admin/wizards-den-admin-policy.md)
-  - [Wizards Den Banning Policy](en/community/admin/wizards-den-banning-policy.md)
-- [Progress Report Creation](en/community/progress-report-creation.md)
-
-Engine Development
-========================
-
-------------------
-
-- [Testing against launcher](en/engine-development/testing-against-launcher.md)
-- [Updating CEF](en/engine-development/updating-cef.md)
-
-Staff
-==============
-
-----------------------
-
-- [Maintainer Policy](en/staff/maintainer-policy.md)
-- [Staff Conflict Resolution](en/staff/staff-conflict-resolution.md)
-
-Maintainer Meetings
-==============
-
-----------------------
-- [2024-04-06](en/maintainer-meetings/maintainer-meeting-2024-04-06.md)
-- [2024-03-23](en/maintainer-meetings/maintainer-meeting-2024-03-23.md)
-- [2024-02-03](en/maintainer-meetings/maintainer-meeting-2024-02-03.md)
-- [2024-01-20](en/maintainer-meetings/maintainer-meeting-2024-01-20.md)
-- [2023-12-30](en/maintainer-meetings/maintainer-meeting-2023-12-30.md)
-- [2023-12-16](en/maintainer-meetings/maintainer-meeting-2023-12-16.md)
-- [2023-11-25](en/maintainer-meetings/maintainer-meeting-2023-11-25.md)
-- [2023-10-21](en/maintainer-meetings/maintainer-meeting-2023-10-21.md)
-- [2023-09-23](en/maintainer-meetings/maintainer-meeting-2023-09-23.md)
-- [2023-09-09](en/maintainer-meetings/maintainer-meeting-2023-09-09.md)
-- [2023-09-02](en/maintainer-meetings/maintainer-meeting-2023-09-02.md)
-- [2023-08-19](en/maintainer-meetings/maintainer-meeting-2023-08-19.md)
-- [2023-07-29](en/maintainer-meetings/maintainer-meeting-2023-07-29.md)
-- [2023-06-10](en/maintainer-meetings/maintainer-meeting-2023-06-10.md)
-- [2023-05-20](en/maintainer-meetings/maintainer-meeting-2023-05-20.md)
-- [2023-05-06](en/maintainer-meetings/maintainer-meeting-2023-05-06.md)
-- [2023-03-05](en/maintainer-meetings/maintainer-meeting-2023-03-05.md)
-- [2023-02-11](en/maintainer-meetings/maintainer-meeting-2023-02-11.md)
-- [2023-01-21](en/maintainer-meetings/maintainer-meeting-2023-01-21.md)
-- [2023-01-07](en/maintainer-meetings/maintainer-meeting-2023-01-07.md)
-- [2022-07-30](en/maintainer-meetings/maintainer-meeting-2022-07-30.md)
-- [2022-07-16](en/maintainer-meetings/maintainer-meeting-2022-07-16.md)
-- [2022-06-25](en/maintainer-meetings/maintainer-meeting-2022-06-25.md)
-- [2022-06-11](en/maintainer-meetings/maintainer-meeting-2022-06-11.md)
-- [2022-05-28](en/maintainer-meetings/maintainer-meeting-2022-05-28.md)
-- [2022-05-14](en/maintainer-meetings/maintainer-meeting-2022-05-14.md)
-- [2022-04-30](en/maintainer-meetings/maintainer-meeting-2022-04-30.md)
-- [2022-04-16](en/maintainer-meetings/maintainer-meeting-2022-04-16.md)
-- [2022-04-02](en/maintainer-meetings/maintainer-meeting-2022-04-02.md)
-- [2022-03-19](en/maintainer-meetings/maintainer-meeting-2022-03-19.md)
-- [2022-03-05](en/maintainer-meetings/maintainer-meeting-2022-03-05.md)
-- [2022-02-05](en/maintainer-meetings/maintainer-meeting-2022-02-05.md)
-- [2022-01-22](en/maintainer-meetings/maintainer-meeting-2022-01-22.md)
-- [2022-01-08](en/maintainer-meetings/maintainer-meeting-2022-01-08.md)
-- [2021-12-11](en/maintainer-meetings/maintainer-meeting-2021-12-11.md)
-- [2021-11-27](en/maintainer-meetings/maintainer-meeting-2021-11-27.md)
-- [2021-11-13](en/maintainer-meetings/maintainer-meeting-2021-11-13.md)
-- [2021-10-30](en/maintainer-meetings/maintainer-meeting-2021-10-30.md)
-- [2021-10-16](en/maintainer-meetings/maintainer-meeting-2021-10-16.md)
-- [2021-10-02](en/maintainer-meetings/maintainer-meeting-2021-10-02.md)
-- [2021-09-19](en/maintainer-meetings/maintainer-meeting-2021-09-19.md)
-
-
-Admin Meetings
-==============
-
-----------------------
-- [2024-05-18](en/admin-meetings/admin-meeting-2024-05-18.md)
-- [2024-04-27](en/admin-meetings/admin-meeting-2024-04-27.md)
-- [2024-03-30](en/admin-meetings/admin-meeting-2024-03-30.md)
-- [2024-03-16](en/admin-meetings/admin-meeting-2024-03-16.md)
-- [2024-02-17](en/admin-meetings/admin-meeting-2024-02-17.md)
-- [2024-02-03](en/admin-meetings/admin-meeting-2024-02-03.md)
