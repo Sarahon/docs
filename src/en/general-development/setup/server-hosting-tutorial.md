@@ -125,7 +125,7 @@ By default, the server ships with no rules. To set custom rules for your own ser
 
 ### Public Hub Server - Getting your server on the launcher's list
 
-1. Read  the [hub server rules](../../community/space-wizards-hub-rules.md) before putting your server on the hub. Advertising to the hub constitutes acceptance of the hub rules.
+1. Read  the [hub server rules](https://docs.spacestation14.com/en/community/space-wizards-hub-rules.html) before putting your server on the hub. Advertising to the hub constitutes acceptance of the hub rules.
 
 2. Pick tags for your server based on the [standard tags](../../robust-toolbox/server-http-api.md#standard-tags).
 
@@ -354,5 +354,5 @@ All of the important links on this page in one convenient place.
 * [SS14.Watchdog](https://github.com/space-wizards/SS14.Watchdog/)
 * [Official Builds](https://central.spacestation14.io/builds/wizards/builds.html)
 * [Wizard's Den Infrastructure Reference](../../community/infrastructure-reference/wizards-den-infrastructure.md) (server specs)
-* [Public Hub Server Rules](../../community/space-wizards-hub-rules.md)
+* [Public Hub Server Rules](https://docs.spacestation14.com/en/community/space-wizards-hub-rules.html)
 * [Port Forwarding](../../server-hosting/port-forwarding.md)
