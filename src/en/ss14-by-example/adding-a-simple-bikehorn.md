@@ -1,12 +1,10 @@
 # Adding a Simple Bike Horn
 
-{{#template ../templates/outdated.md}}
-
-This tutorial goes over the **entity component system** system and several other key topics in the SS14 codebase by demonstrating how one would implement a clown horn from scratch. You can try copying the steps yourselves, or you can just read along.
+This tutorial goes over the **entity component system** system and several other key topics in the GS14 codebase by demonstrating how one would implement a clown horn from scratch. You can try copying the steps yourselves, or you can just read along.
 
 ## Entities, components, and systems
 
-While Space Station 14 is written in C#, an object-oriented programming language, it uses a different data model to represent items in game. This data model is called the *entity component system* (ECS). (*Why do we do this? See [ECS](../robust-toolbox/ecs.md)*)
+While Goob Station is written in C#, an object-oriented programming language, it uses a different data model to represent items in game. This data model is called the *entity component system* (ECS). (*Why do we do this? See [ECS](../robust-toolbox/ecs.md)*)
 
 ### Entities
 
@@ -32,7 +30,7 @@ Entity systems implement behavior by defining *event handlers* or by implementin
 
 As an another example, consider the `FoodComponent`. A programmer might make `EatingSystem` to handle eating food. `EatingSystem` listens to the `OnUseInHand` event - whenever `OnUseInHand` is heard/triggered, `EatingSystem` checks if there is a `FoodComponent` in the object that was used. If there is, then it lowers the value of `nutritionLeft` and plays a munching sound.
 
-That's the jist of ECS. If you're interested in learning more about it, then check out [Your mind on ECS](../robust-toolbox/ecs.md). The ECS approach really is powerful and allows us to avoid spaghetti code, despite the complexity of SS14.
+That's the jist of ECS. If you're interested in learning more about it, then check out [Your mind on ECS](../robust-toolbox/ecs.md). The ECS approach really is powerful and allows us to avoid spaghetti code, despite the complexity of GS14.
 
 ```admonish info
 You don't have to perfectly understand the ECS architecture at first. It can be daunting for both new programmers and those used to traditional OOP. However, the overall 'feel' and advantages of the architecture should become clear as you use it more.
@@ -40,7 +38,7 @@ You don't have to perfectly understand the ECS architecture at first. It can be 
 
 ## How do I make an Entity and give it Components?
 
-SS14 uses a system we call **prototypes**. These are "entity presets", essentially. They are similar to *prefabs* in Unity, or a subtype of `/obj` or `/mob` in BYOND. 
+GS14 uses a system we call **prototypes**. These are "entity presets", essentially. They are similar to *prefabs* in Unity, or a subtype of `/obj` or `/mob` in BYOND. 
 
 Entity prototypes define *which components are on the entity, and what data those components hold*. It also defines basic data like the entity's name, description, and prototype ID (used to spawn it). 
 
@@ -64,7 +62,7 @@ An example is shown below:
     delay: 2.0
 ```
 
-This is written in **YAML**, a data language similar to JSON, and is located in the folder `Resources/Prototypes/Entities/Objects/Fun/skub.yml`. All prototypes must be in the `Resources/Prototypes` folder and should be organized into the proper folder. 
+This is written in **YAML**, a data language similar to JSON, and is located in the folder `Resources/Prototypes/Entities/Objects/Fun/skub.yml`. All prototypes must be in the `Resources/Prototypes` folder and should be organized into the proper folder. All new prototypes being added to Goob Station go in `Resources/Prototypes/Goobstation` to help separate Goob code from upstream code, avoiding some conflicts when merging upstream. This does not mean you just throw all your files in the Goobstation folder however, you must use the regular file structure, just within the Goobstation prototypes folder. For example if you were adding a new type of skub item, you would put it in `Resources/Prototypes/Goobstation/Entities/Objects/Fun/skub.yml`, making it so that Goob code isn't a mess and so that it's easy to find upstream and Goob files that correspond to each other.
 
 If you want more pointers on YAML, check [YAML Crash Course](../general-development/tips/yaml-crash-course.md) and [Serialization](../robust-toolbox/serialization.md).
 
@@ -84,13 +82,11 @@ Your goal is to make a **Clown Horn** that **honks** when you use it. This requi
 Normally, you would want to search through the codebase and ask some other coders to see whether a component/system that does this already exists. In this case, ```EmitSoundOnUse``` *does indeed exist* in the main SS14 codebase. But for the sake of this tutorial, we'll pretend it doesn't and try to implement it ourselves!
 ```
 
-**To start off**, let's make a simple clown horn prototype. I will make a new file called ```clown_horn.yml``` and add it to the ```Resources\Prototypes\Entities\Objects``` folder.
+**To start off**, let's make a simple clown horn prototype. I will make a new file called ```clown_horn.yml``` and add it to the ```Resources/Prototypes/Goobstation/Entities/Objects/Fun/``` folder.
 
 ![](https://i.imgur.com/qR0QzqA.png)
 
-Might want to organize that into the "Fun" folder later, but organization is up to you and your codebase!
-
-Now let's fill out the prototype with a basic clown horn. Because we don't yet have a dedicated SS14 prototype editor, many people usually just copy a similar prototype and modify it to their needs.
+Now let's fill out the prototype with a basic clown horn. Because we don't yet have a dedicated GS14 prototype editor, many people usually just copy a similar prototype and modify it to their needs.
 
 ```yaml
 - type: entity
@@ -100,7 +96,7 @@ Now let's fill out the prototype with a basic clown horn. Because we don't yet h
   description: It goes honk honk!
   components:
   - type: Sprite
-    sprite: Objects/Fun/bikehorn.rsi
+    sprite: Goobstation/Objects/Fun/bikehorn.rsi
     state: icon
 ```
 
@@ -142,17 +138,17 @@ Those helpers can be thought of as handling **client click -> server** and **ser
 ### A basic implementation of a component
 
 ```admonish warning
-In the Space Station 14 codebase, Components & EntitySystems alike (along with other classes) go inside folders directly under the `Content.Server`, `Content.Shared`, or `Content.Client` projects. There are folders for `Atmos`, `Botany`, `Research`, `Storage`, and a lot more. If a suitable folder doesn't exist, create one! Never put files directly into the top directory of the project.
+In the Goob Station codebase, Components & EntitySystems alike (along with other classes) go inside folders directly under the `Content.Server`, `Content.Shared`, or `Content.Client` projects. There are folders for `Atmos`, `Botany`, `Research`, `Storage`, and a lot more. If a suitable folder doesn't exist, create one! Remember to put things into Goobstation (e.g. `Resources/Content.Server/Goobstation/`) folders if they're new and you aren't just modifying an already existing thing.
 ```
 
-Under the `Content.Server` project, there's a folder called `Sound`. That seems like a good place to put our new component (and in fact, this is where the real EmitSoundOnUse is located). Let's call our version `PlaySoundOnUseComponent`. Note: if you just copy paste this code in, it may not work, as you'll need to import various classes. Your IDE can do this for you.
+Under the `Content.Server` project, there's a folder called `Sound`. That seems like a good place to put our new component (and in fact, this is where the real EmitSoundOnUse is located). Let's remember we need to put this in the corresponding Goobstation folder so `Content.Server/Goobstation/Sound/`. Let's call our version `PlaySoundOnUseComponent`. Note: if you just copy paste this code in, it may not work, as you'll need to import various classes. Your IDE can do this for you.
 
 Now let's just make the most basic component possible:
 
 ```csharp
-// Content.Server/Sound/PlaySoundOnUseComponent.cs
+// Content.Server/Goobstation/Sound/PlaySoundOnUseComponent.cs
 
-namespace Content.Server.Sound;
+namespace Content.Server.Goobstation.Sound;
 
 [RegisterComponent]
 public sealed partial class PlaySoundOnUseComponent : Component
@@ -174,7 +170,7 @@ Now, let's go ahead and add PlaySoundOnUse to our prototype.
   description: It goes honk honk!
   components:
   - type: Sprite
-    sprite: Objects/Fun/bikehorn.rsi
+    sprite: Goobstation/Objects/Fun/bikehorn.rsi
     state: icon
   - type: PlaySoundOnUse
 ```
@@ -186,9 +182,9 @@ Let's add some data to our component. As you may have noticed above, the `Sprite
 In our case, we'll probably want a field called `sound` on our component, which stores a path to the sound to play when the entity is activated. It's pretty easy to do that:
 
 ```csharp
-// Content.Server/Sound/PlaySoundOnUseComponent.cs
+// Content.Server/Goobstation/Sound/PlaySoundOnUseComponent.cs
 
-namespace Content.Server.Sound;
+namespace Content.Server.Goobstation.Sound;
 
 [RegisterComponent]
 public sealed partial class PlaySoundOnUseComponent : Component
@@ -208,23 +204,23 @@ All you need to do to create a field that can be modified in YAML is to add the 
   description: It goes honk honk!
   components:
   - type: Sprite
-    sprite: Objects/Fun/bikehorn.rsi
+    sprite: Goobstation/Objects/Fun/bikehorn.rsi
     state: icon
   - type: PlaySoundOnUse
     sound: /Audio/Items/bikehorn.ogg
 ```
 
-Now we're getting somewhere! One thing to note is that the path here is relative to the `Resources` directory (which `SoundSystem` always assumes), and we're also assuming that the `Resources/Audio/Items/bikehorn.ogg` file is real. If you check, it is! But if a sound isn't present that you need, you can always add it yourself somewhere in the `Audio` folder.
+Now we're getting somewhere! One thing to note is that the path here is relative to the `Resources` directory (which `SoundSystem` always assumes), and we're also assuming that the `Resources/Audio/Goobstation/Items/bikehorn.ogg` file is real. If you check, it is! But if a sound isn't present that you need, you can always add it yourself somewhere in the `Audio/Goobstation/` folder.
 
 
 ## Creating our EntitySystem
 
-Let's finally add some flavor to our bike horn by.. making it actually honk. As said previously, we'll need an `EntitySystem` which hooks into the `UseInHandEvent` and calls some code from there. Let's create our EntitySystem `PlaySoundOnUseSystem` in the same `Content.Server/Sound` folder:
+Let's finally add some flavor to our bike horn by.. making it actually honk. As said previously, we'll need an `EntitySystem` which hooks into the `UseInHandEvent` and calls some code from there. Let's create our EntitySystem `PlaySoundOnUseSystem` in the same `Content.Server/Goobstation/Sound` folder:
 
 ```csharp
-// Content.Server/Sound/PlaySoundOnUseSystem.cs
+// Content.Server/Goobstation/Sound/PlaySoundOnUseSystem.cs
 
-namespace Content.Server.Sound;
+namespace Content.Server.Goobstation.Sound;
     
 public sealed class PlaySoundOnUseSystem : EntitySystem
 {
@@ -239,9 +235,9 @@ In order to subscribe to an event being raised, we'll need to override the syste
 In this method, we'll add a `SubscribeLocalEvent` call, and I'll explain the details after the fact.
 
 ```csharp
-// Content.Server/Sound/PlaySoundOnUseSystem.cs
+// Content.Server/Goobstation/Sound/PlaySoundOnUseSystem.cs
 
-namespace Content.Server.Sound;
+namespace Content.Server.Goobstation.Sound;
 
 public sealed class PlaySoundOnUseSystem : EntitySystem
 {
@@ -267,7 +263,7 @@ If you're using an IDE, it might allow you to automatically create this method u
 Here's what our class will look like now, with our new method:
 
 ```csharp
-namespace Content.Server.Sound;
+namespace Content.Server.Goobstation.Sound;
 
 public sealed class PlaySoundOnUseSystem : EntitySystem
 {

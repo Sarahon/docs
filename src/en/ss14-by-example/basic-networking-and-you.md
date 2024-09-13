@@ -2,7 +2,7 @@
 
 You should already be familiar with the `Client`/`Shared`/`Server` paradigm that Robust uses. If not, you should read up on the previous documentation.
 
-SS14 is a multiplayer game! This is a very important fact, and its a fact you'll likely have to reckon with quite a lot when coding. Thinking through this properly is important to ensure that things go smoothly and there are no potential security oversights.
+GS14 is a multiplayer game! This is a very important fact, and its a fact you'll likely have to reckon with quite a lot when coding. Thinking through this properly is important to ensure that things go smoothly and there are no potential security oversights.
 
 Most of the time, networking will involve the server sending some important data to the client, so that the client can do things with it, like show a user interface or show appearance visuals. This is known as **replication**, and in SS14 is primarily handled through **component states**.
 

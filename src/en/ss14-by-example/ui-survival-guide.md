@@ -5,7 +5,7 @@ So you have choosen to take on the harsh wasteland that is coding UI and working
 
 Great!
 
-But before you can start ~~sacrificing puppies~~ making fancy UIs using our UI system you first need to know how to define a basic UI layout so I recommend reading the [basic user interface documentation](../robust-toolbox/user-interface.md) first.
+But before you can start ~~sacrificing puppies~~ making fancy UIs using the UI system you first need to know how to define a basic UI layout so I recommend reading the [basic user interface documentation](../robust-toolbox/user-interface.md) first.
 
 ## Quick and dirty (Using FancyWindow)
 
@@ -14,7 +14,7 @@ The line between life or death is determined by what we are willing to do.
 - Bear Grylls
 ```
 
-So your UI doesn't require fancy styling magic but you want it to look like the final mockups on our [figma page](https://www.figma.com/file/KE5eKymegsLrsQdjZGbTIs/UI?node-id=0%3A188)?
+So your UI doesn't require fancy styling magic but you want it to look like the final mockups on the [figma page](https://www.figma.com/file/KE5eKymegsLrsQdjZGbTIs/UI?node-id=0%3A188)?
 
 Count yourself lucky because you can get away with just using `FancyWindow` instead of `DefaultWindow`!
 
@@ -57,7 +57,7 @@ You used `FancyWindow` and ~~stole code~~ looked at style classes from other UIs
 
 Then you have no choice but to venture deep into the treacherous lands of stylesheet code. *\*cue dramatic music\**
 
-Taking a look at [StyleNano.cs](https://github.com/space-wizards/space-station-14/tree/master/Content.Client/Stylesheets/StyleNano.cs) will ~~instill you with fear~~ overwhelm you with its 1318 lines of code.
+Taking a look at [StyleNano.cs](https://github.com/Goob-Station/Goob-Station/tree/master/Content.Client/Stylesheets/StyleNano.cs) will ~~instill you with fear~~ overwhelm you with its 1318 lines of code.
 
 `StyleNano` mainly consists of tree things:
 - Variable/Constant declarations
@@ -73,7 +73,7 @@ You can safely skip all of the variable and constant declarations until you reac
 ```
 This stylesheet declaration is where all the style classes go.
 
-Here (and a similiar construct in [StyleBase.cs](https://github.com/space-wizards/space-station-14/tree/master/Content.Client/Stylesheets/StyleBase.cs)) is where you can look up and add style classes.
+Here (and a similiar construct in [StyleBase.cs](https://github.com/Goob-Station/Goob-Station/tree/master/Content.Client/Stylesheets/StyleBase.cs)) is where you can look up and add style classes.
 
 ### Hard to read way of declearing a style class
 

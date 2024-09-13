@@ -1,15 +1,17 @@
 # Fluent & Localization
-The localization system is what pulls up human-readable text strings so that they can be translated by other servers if they so choose. Mainline SS14 only supports English, but other servers are free to add additional language support.
+The localization system is what pulls up human-readable text strings so that they can be translated by other servers if they so choose. Goob Station only supports English, but forks are free to add additional language support.
 
 Localization is done with [Project Fluent](https://www.projectfluent.org/) (from now on just 'Fluent'). It's a project for a better localization system invented by Mozilla for Firefox. It's relatively new but has notable improvements over older systems like `gettext`. With old systems like gettext, the code still contains the "english" version of the string. This however does not work well in practice because English lacks (for better or worse) many nuances other languages might have. Fluent solves this by not even having English in the code.
 
 ## Basic Overview
 
-The basic idea is that the code and prototypes themselves contains no human-presented text strings. All actual text presented to humans is instead specified in `.ftl` files inside `Resources/Locale/<language code>`. So for (US) English it'd be `space-station-14/Resources/Locale/en-US/`, French would be `.../fr-FR/`, etc... 
+The basic idea is that the code and prototypes themselves contains no human-presented text strings. All actual text presented to humans is instead specified in `.ftl` files inside `Resources/Locale/<language code>`. So for (US) English it'd be `Goob-Station/Resources/Locale/en-US/`, French would be `.../fr-FR/`, etc.
 
-An example of a real localization directory can be found [here](https://github.com/space-wizards/space-station-14/tree/master/Resources/Locale/en-US), SS14's English (US/Default) localization.
+Like prototypes however, unless modifying an existing localization, all new localizations should be placed within a folder named `Goobstation`, followed by the regular folder structure, `Goob-Station/Resources/Locale/en-US/Goobstation/`, for example `Goob-Station/Resources/Locale/en-US/Goobstation/forensics/residues.ftl`.
 
-These localized text strings can be retrieved in-game with the `Loc.GetString()` method (and similar).
+An example of a real localization directory can be found [here](https://github.com/Goob-Station/Goob-Station/tree/master/Resources/Locale/en-US), GS14's English (US/Default) localization.
+
+These localized text strings can be retrieved in code with the `Loc.GetString()` method (and similar).
 
 Note that you can find a complete overview of Fluent's markup syntax, with examples and live playground, on [its website](https://www.projectfluent.org/) (see "syntax guide" on the top).
 
@@ -140,8 +142,7 @@ You should seek to use these functions whenever possible to make dynamic and 100
 ## Localizing Prototypes
 
 ```admonish warning
-This is not for use upstream. If you're making upstream content please use the name/description fields.
-This is to make it easier for translations to override things without editing the main game's data.
+Generally, we don't localise prototype names and descriptions on Goob, so this is just to demonstrate that it's possible, and explain because it is used for certain entities from upstream.
 ```
 
 ```yaml
@@ -187,10 +188,10 @@ Look! no YAML definition for name or desc!
 
 ## Advice
 - ***INDENT WITH SPACES, NOT TABS***
-    - Fluent treats tabs literally, so they can't be used for indentation
+    - Fluent treats tabs literally, so they can't be used for indentation unfortunately
 - Fluent's [Syntax Guide.](https://www.projectfluent.org/fluent/guide/)
 - Fluent's [Good Practices.](https://github.com/projectfluent/fluent/wiki/Good-Practices-for-Developers)
-- SS14-specific, we recommend prefixing all messages with something relevant to the context they're used in, this helps keep the messageIds unique (a requiement) and also serves to "namespace" messages.
+- GS14-specific, we recommend prefixing all messages with something relevant to the context they're used in, this helps keep the messageIds unique (a requiement) and also serves to "namespace" messages.
 e.g. messages defined for the `StackComponent` should begin with `comp-stack-`
-- To apply the language language pack to the game you just have to edit [Shared/EntryPoint.cs](https://github.com/space-wizards/space-station-14/blob/master/Content.Shared/EntryPoint.cs#L18).
+- To apply the language language pack to the game you just have to edit [Shared/EntryPoint.cs](https://github.com/Goob-Station/Goob-Station/blob/master/Content.Shared/EntryPoint.cs#L18).
 - We recommend searching for `Loc.GetString` in the code to find all the translatable text
