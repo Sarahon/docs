@@ -1,7 +1,7 @@
-<img src="en/assets/misc/logo.svg" width=128 style="margin-left:auto;margin-right:auto;display:block"/>
+<img src="en/assets/misc/logo.svg" width=512 style="margin-left:auto;margin-right:auto;display:block"/>
 
 ```admonish warning "Players beware"
-This is the developer's wiki. If you are a player, the player wiki is a work in progress.).
+This is the developer's wiki. If you are a player, the player wiki is a work in progress.
 ```
 
 ```admonish question "Technical Issues"
