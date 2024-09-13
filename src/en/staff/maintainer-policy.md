@@ -1,14 +1,24 @@
 ﻿# Maintainer Policy
-## Reviews and merging PRs
-This does not apply to rule change PRs from the Head Game Admins.
+
+**Breaking any of these rules may result in an instant demotion from Maintainer.**
+
+## General
+Maintainers are expected to communicate respectfully with each other and with contributors in GitHub and Discord, to a reasonable extent. Engaging in harassment campaigns or attempting to stir up drama for no good reason may result in instant demotion from Maintainer.
+
+## Reviews and Merging PRs
+This does not apply to PRs by Head Maintainers or Head Game Admins.
 
 **Procedure:**
-If this PR may affect game admins (rules, rule clarifications, round flow, etc) **ensure a post has been made in #admin-reviews on discord.**
+Every PR must have at least one **Head Maintainer** approving it before being merged.
+
+For content PRs, at least 24 hours must have passed since the creation of the PR before being merged. This can be bypassed by Head Maintainers if reasonable to do so.
+
+If a PR may affect game admins (rules, rule clarifications, admin tooling etc) **ensure a post has been made in #admin-reviews on discord.**
   - **If you are not sure, do it anyway.**
-  - **If this is a VERY important or large PR, Game Admins must be pinged.**
-- The PR must have at least one **Head Maintainer** approving it, and if Game Admins must be notified, at least 2 days must have passed since they were notified.
-- Once the time is up:
-  - If no one dissents, the PR can be merged.
+  - **If this is a very important or large PR, Game Admins must be pinged in the post.**
+
+- After a minimum of two days:
+  - If no one dissents, the PR can be merged (with Head Maintainer approval, as usual).
   - If there is dissent, the PR author must be notified on GitHub of people's requests for changes and/or arguments against it. You do not need to put a ton of effort in summarizing people's points, simply list opinions as "Maintainer opinion" and "Game Admin opinion".
     - **These opinions must be communicated in a neutral manner, even if you disagree with them.**
   - This is the case even if only one person dissents.
@@ -18,5 +28,3 @@ If this PR may affect game admins (rules, rule clarifications, round flow, etc) 
     - There is no veto power from any role in the project.
   - If less than 75% of people vote to merge the PR, it must be discussed again and the PR author must be notified.
   - If after another 48 hours no poll reaches 75% or more approvals, the PR may be closed.
-
-**Breaking any of these rules may result in an instant demotion from Maintainer.**
