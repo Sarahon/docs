@@ -1,4 +1,4 @@
-# PR Guildlines
+# PR Guidelines
 
 ```admonish warning
 This is an old page, and hasn't been updated in over a year. It does not reflect the current state of the game and should be updated as soon as possible.
