@@ -50,9 +50,6 @@ dotnet run --project Content.Client --configuration Tools
 If you are using an IDE, there will be some other way of setting the configuration. For example, in VS there is simply a dropdown menu:
 ![mapping-release-dropdown.png](../../../assets/images/mapping/mapping-release-dropdown.png)
 
-## Without Development Environment
-If you choose not to do this, you will need to download a [recent server build](https://central.spacestation14.io/builds/wizards/builds.html).
-
 # Workflow
 
 ## Start Mapping
@@ -129,7 +126,7 @@ To pull request:
 1. Create a branch on your cloned respository either through your Github client.
 2. Add your map and map prototype files to your commit and update PostMapInitTest.cs where applicable. (Stage them)
 4. Commit these two changes to your branch then push them to origin.
-5. Head to the upstream SS14 repository and navigate to the pull requests tab. There should be a banner saying something like "recent changes on your branch, pull request?" Do this to open a pull request for your map. Alternatively you can open a pull request from your repository.
+5. Head to the [Goob Station repository](https://github.com/Goob-Station/Goob-Station) and navigate to the pull requests tab. There should be a banner saying something like "recent changes on your branch, pull request?" Do this to open a pull request for your map. Alternatively you can open a pull request from your repository.
 6. Fill out the pull request page with details like screenshots / map renders, advising you've followed the quality control checklist, max / min players, and any other details and add a changelog entry.
 
 # Troubleshooting and FAQ

@@ -31,7 +31,7 @@ These don't have to be discrete sections and shouldn't be. When you're detailing
 ``` admonish warning "Don't"
 - Include pseudocode level descriptions of how your feature works. That's for after the proposal has been accepted and you're actually implementing the thing.
 - Specify numerical amounts for every item, field, or mechanic. That's for eventual balance bikeshedding; for example it's enough to say that a disease will have one, several, or many symptoms.
-- Forget to include how players should interact with your features. SS14 is a multiplayer game and how the players engage with your mechanics is more important than the specific mechanics they engage with.
+- Forget to include how players should interact with your features. GS14 is a multiplayer game and how the players engage with your mechanics is more important than the specific mechanics they engage with.
 - Write an entire, actual FSD or SRS. It's not and will never be required as it constitutes egregious overkill for a project of our size and structure.
 ```
 
@@ -46,7 +46,7 @@ A good rule of thumb if the new feature or rework you have in mind would require
 No idea! What design proposals do or do not get in is determined by maintainer approval like normal PRs. If you can get at least one maint to decide that it sounds like a good idea then there's a good chance that it will get accepted. Pretty much any idea is going to need at least some critiquing before it gets merged so don't get discouraged!
 
 ``` admonish tip "Design Principles"
-If you want to improve your chances, it's recommended that you read the [SS14 Core Design Documentation](/src/en/space-station-14/design.md) document to get a high-level overview before you start writing, as it'll provide context for why things are the way they are.
+If you want to improve your chances, it's recommended that you read the [GS14 Core Design Documentation](/src/en/space-station-14/design.md) document to get a high-level overview before you start writing, as it'll provide context for why things are the way they are.
 
 PR'd design documents should also follow the [Decorum Guidelines](./feature-proposals/expected-feature-proposal-decorum.md).
 ```

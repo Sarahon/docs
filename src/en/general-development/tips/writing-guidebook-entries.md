@@ -2,13 +2,13 @@
 
 The guidebook is a powerful tool for communicating more obscure in-game information to players without forcing them to travel to an external wiki. Moving forward, most information should be moved from the wiki to the guidebook in some form.
 
-This guide explains how to write a guidebook entry and set it up in game as well as provides helpful tips for creating good quality entries. Afterwards, if you want to learn how to make a pull request for your new entry, check out [Git for the SS14 Developer](../setup/git-for-the-ss14-developer.md).
+This guide explains how to write a guidebook entry and set it up in game as well as provides helpful tips for creating good quality entries. Afterwards, if you want to learn how to make a pull request for your new entry, check out [Git for the GS14 Developer](../setup/git-for-the-ss14-developer.md).
 
 Guide entries are made of two parts, the `.xml` file for the contents of the guide itself and the YAML prototype which defines metadata about the guide itself. We will first go over the file which makes up the contents of the guide.
 
 ## Writing Guides 
 
-All guide entries are stored in the `/Resources/ServerInfo/Guidebook/` path in the main repository. The file structure of the guides themselves should roughly correspond to the structure of the entries themselves, though this is not required. The most important aspect is just making sure the files are roughly organized.
+All guide entries are stored in the `/Resources/ServerInfo/Guidebook/` path in the main repository. The file structure of the guides themselves should roughly correspond to the structure of the entries themselves, though this is not required. The most important aspect is just making sure the files are roughly organized. Files specific to Goob Station (i.e. if you're adding a new file and not just modifying an existing one) should be placed in `Resources/ServerInfo/Guidebook/Goobstation/`.
 
 The entries themselves are essentially plain text files with some additional tags that are used for styling. The only part of an entry that is required is the `<Document>` tag. 
 
@@ -110,7 +110,7 @@ Each entry consists of a single prototype with a few different variables you can
 - type: guideEntry
   id: Magboots
   name: guide-entry-magboots
-  text: "/ServerInfo/Guidebook/magboots.xml"
+  text: "/ServerInfo/Goobstation/Guidebook/magboots.xml"
   priority: 10
   children:
   - Radio

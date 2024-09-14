@@ -2,7 +2,7 @@
 
 Because apparently there aren't any good ones.
 
-SS14 uses YAML for prototype definitions. It's like JSON but actually supposed to be written by marginally-intelligent carbon-based lifeforms like you and me.
+GS14 uses YAML for prototype definitions. It's like JSON but actually supposed to be written by marginally-intelligent carbon-based lifeforms like you and me.
 
 ## Comments
 
@@ -173,4 +173,4 @@ YAML actually has a lot more data types. YAML is also a mess. There's like 10+ w
 > In C#. 
 > This of course trips up any YAML validator that tries to find the YAML tag schema for it. Be careful when auto-formatting `.yml` Resources.
 
-SS14 does not use direct object deserialization, and `YamlDotNet` (the library we use to parse YAML) is nice enough to treat scalars as strings only. It does not try to parse strings as numbers or whatever when using the "YAML to LINQ" API (What I like to call "the sane one that isn't completely useless for practical use"). Parsing of numbers is handled by our own C# code on the spot, so if the code expects a boolean it'll treat `true` and `false` correctly, if it expects a string it'll just see it as the string.
+GS14 does not use direct object deserialization, and `YamlDotNet` (the library we use to parse YAML) is nice enough to treat scalars as strings only. It does not try to parse strings as numbers or whatever when using the "YAML to LINQ" API (What I like to call "the sane one that isn't completely useless for practical use"). Parsing of numbers is handled by our own C# code on the spot, so if the code expects a boolean it'll treat `true` and `false` correctly, if it expects a string it'll just see it as the string.

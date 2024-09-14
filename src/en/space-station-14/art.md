@@ -14,7 +14,7 @@ These aren't metrics for measuring the objective quality of art, but rather just
 ## Theme & Style
 
 ### Keep it Grounded
-* Although SS14 takes place in the future, the general aesthetic is far from the extravagant techno-elegance of a lot of modern Sci-fi.
+* Although GS14 takes place in the future, the general aesthetic is far from the extravagant techno-elegance of a lot of modern Sci-fi.
 Common household items and machines shouldn't look very different from what we have today.
 
 
@@ -30,9 +30,9 @@ They shouldn't stick out an inordinate amount and shouldn't be commonly found.
 If someone can identify an obvious pop culture reference, it should be fairly rare so as to not distract from the tone and atmosphere. 
 
 ### Contrast Between Boring and Fantastical
-* While many elements of SS14 are quite grounded and boring, there are many different fantastical things as well.
+* While many elements of GS14 are quite grounded and boring, there are many different fantastical things as well.
 For these rarer and more less realistic things, playing up the relative different to the surrounding is important.
-This is a large part in the comedic tone of SS14.
+This is a large part in the comedic tone of GS14.
 * * A wizard in a tower can be sagely and wise, but a wizard waiting to pick up his mail plays into absurdist humor in a beneficial way.
 * * A gross or weird alien can be emphasized through contrast with the environment. 
 This aids in depicting futuristic items, as they appear even more advanced through their contrast with the things around them.
@@ -42,9 +42,9 @@ This aids in depicting futuristic items, as they appear even more advanced throu
 Using especially vibrant colors or baking in glows into the sprite can give extra emphasis to something that _should_ look out of place.
 
 ### The Future Never Looked so Old
-* While the setting is unquestionably in the future, the aesthetics of SS14 commonly and routinely reference older technology.
+* While the setting is unquestionably in the future, the aesthetics of GS14 commonly and routinely reference older technology.
 The station is lit with buzzing incandescent bulbs, people send faxes to one another, and computers are still fat consoles with big glass screens.
-This retro appearance is an important factor of the visual identity of SS14: _embrace it_.
+This retro appearance is an important factor of the visual identity of GS14: _embrace it_.
 
 
 * When creating new assets or features, playing on existing real world technology can create an intuitive understanding.

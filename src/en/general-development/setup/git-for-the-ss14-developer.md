@@ -1,6 +1,6 @@
-# Git for the SS14 Developer
+# Git for the GS14 Developer
 
-If you've ever followed a hackily written guide to Git or opened up one of the many incredibly bloated modern git GUIs like GitKraken, you probably recognize that Git can be *really confusing*. The purpose of this guide is to give you just the information you need to develop properly for SS14 and give you the resources to learn more if necessary.
+If you've ever followed a hackily written guide to Git or opened up one of the many incredibly bloated modern git GUIs like GitKraken, you probably recognize that Git can be *really confusing*. The purpose of this guide is to give you just the information you need to develop properly for GS14 and give you the resources to learn more if necessary.
 
 Here are some more resources for learning about Git:
 - [The Git-SCM online book](https://git-scm.com/book/en/v2)
@@ -28,7 +28,7 @@ I won't have steps for these (I'm recommending these after I initially wrote thi
 - [Fork](https://git-fork.com/) -- fast and extremely ergonomic GUI, my personal favorite. "Non-free", but it's WinRAR-level non-free, so it's basically free. Has support for partial staging of
 - [Sublime Merge](https://www.sublimemerge.com/) -- very similar to Fork, looks and feels great and I've gotten a lot of recommendations for it, though I haven't used it much. Also has support for partial staging.
 
-Most IDEs have some form of Git integration as well. [JetBrains Rider](https://www.jetbrains.com/rider/)'s Git integration is really good (and I personally recommend Rider for everything SS14-development related). I don't recommend Visual Studio's Git integration, because it's.. not very good.
+Most IDEs have some form of Git integration as well. [JetBrains Rider](https://www.jetbrains.com/rider/)'s Git integration is really good (and I personally recommend Rider for everything GS14-development related). I don't recommend Visual Studio's Git integration, because it's.. not very good.
 
 While you're here, install `Python 3.7+` as well if you don't have it already. You can do that [here](https://www.python.org/) for Windows and Mac, and if you're on Linux you almost certainly have Python installed already. If you don't, figure it out yourself, dork!
 
@@ -40,7 +40,7 @@ When [setting up your `user.name` and `user.email`](https://git-scm.com/book/en/
 
 Now that you have Git installed, I recommend you read up a bit on the basics of it first and get acquainted with whatever git client you're working with, whether its just command-line (Git Bash) or anything else.
 
-We're going to run through the process of setting up a Git environment for Space Station 14 so that you can **contribute code through pull requests, create your own codebase**, or just **check out the history of the project.**
+We're going to run through the process of setting up a Git environment for Goob Station so that you can **contribute code through pull requests, create your own codebase**, or just **check out the history of the project.**
 
 ### 1.1 Why are we even using Git?
 
@@ -58,13 +58,13 @@ A **remote** repository is just a repository's that's on GitHub. A **local** rep
 
 First, let's make our own remote repository fork of Space Station 14. You'll need a GitHub account for this, of course. 'Forking' it like this just means you're copying all of the repository's history and changes into your own remote repository so that you can do stuff freely to the code.
 
-Your remote repository doesn't automatically update with changes from the original SS14 repo--you'll have to do that yourself, which I'll talk about later.
+Your remote repository doesn't automatically update with changes from the original GS14 repo--you'll have to do that yourself, which I'll talk about later.
 
-Navigate to the [Space Station 14 repository](https://github.com/space-wizards/space-station-14) and click here:
+Navigate to the [Goob Station repository](https://github.com/Goob-Station/Goob-Station) and click here:
 
 ![](https://i.imgur.com/lAHNHdD.png)
 
-From there, it'll ask you where to fork it and what to name it--just to your regular account, and name it whatever you please! I'd stick with `space-station-14` if you just want to help out with development, though.
+From there, it'll ask you where to fork it and what to name it--just to your regular account, and name it whatever you please! I'd stick with `Goob-Station` if you just want to help out with development, though.
 
 ### 2.2 Creating your local repository
 
@@ -106,7 +106,7 @@ Right click:
 
 <hr>
 
-Then, we'll enter the command for cloning **our** remote repository--not the `space-wizards/space-station-14` repository.
+Then, we'll enter the command for cloning **our** remote repository--not the `Goob-Station/Goob-Station` repository.
 
 <details><summary>TortoiseGit</summary>
 <p>
@@ -133,7 +133,7 @@ Then, we'll enter the command for cloning **our** remote repository--not the `sp
 ![](https://i.imgur.com/Xn4AQLf.png)
 
 Then **c**hange **d**irectory using:
-``cd space-station-14`` 
+``cd Goob-Station`` 
 
 (This may be different if you cloned another fork, it's almost always being the same as the repository name)
 
@@ -160,15 +160,15 @@ If you are on Windows and get redirected to the Microsoft Store or encounter a m
 
 If you do want to modify the engine directly however, or you want to update the submodule manually (the auto updating can be a pain occasionally), make a file called DISABLE_SUBMODULE_AUTOUPDATE inside the BuildChecker/ directory.
 
-If you ever need to manually update RobustToolbox for whatever reason you can use `cd RobustToolbox; git checkout v0.4.87`(replace `v0.4.87` with the latest RobustToolbox release) then you can use `cd..\` to get back into your SS14 repo. This is also an example of using `cd` to navigate files from the comfort of your command line.
+If you ever need to manually update RobustToolbox for whatever reason you can use `cd RobustToolbox; git checkout v0.4.87`(replace `v0.4.87` with the latest RobustToolbox release) then you can use `cd..\` to get back into your GS14 repo. This is also an example of using `cd` to navigate files from the comfort of your command line.
 
 ## 3. Setting up remotes
 
 When you cloned your remote repository, a **remote** was automatically added to your local repository. **Remotes** are just named URLs to remote repositories that Git keeps track of so you can do stuff like download (pull) new changes to the code or upload (push) code to your forked repository. 
 
-In this case, the remote automatically added is called`origin` and it points to `https://github.com/[username-here]/space-station-14` (or whatever you named the remote repository).
+In this case, the remote automatically added is called`origin` and it points to `https://github.com/[username-here]/Goob-Station` (or whatever you named the remote repository).
 
-One issue: we don't have a reference to the original `space-wizards/space-station-14` remote repository anywhere! How are we supposed to update our local repository without it? So let's make sure we've navigated inside our local repo's folder, and we'll add a new remote:
+One issue: we don't have a reference to the original `Goob-Station/Goob-Station` remote repository anywhere! How are we supposed to update our local repository without it? So let's make sure we've navigated inside our local repo's folder, and we'll add a new remote:
 
 <details><summary>TortoiseGit</summary>
 <p>
@@ -200,15 +200,11 @@ One issue: we don't have a reference to the original `space-wizards/space-statio
 
 <hr>
 
-All this does is add a new remote named `upstream` that points to the original `space-wizards/space-station-14` repository. Now we can receive updates from the main repository whenever we want! (see below on how to do that). 
+All this does is add a new remote named `upstream` that points to the original `Goob-Station/Goob-Station` repository. Now we can receive updates from the main repository whenever we want! (see below on how to do that). 
 
 The convention is to call the remote pointing to the original repository `upstream` but you can technically call it whatever you like. I'll be referring to it as 'the upstream', though, and it's terminology Git guides use as well.
 
 **Addendum for fork/downstream developers:** If a downstream repository you wish to contribute to is set up as a direct fork (IE: GitHub shows a "forked from" label underneath the repo's name), then you'll additionally want to add that fork as a remote (but if the fork isn't set up that way, you can ignore this). You can do this in a way similar to how you've added the upstream as a remote (just use the fork's GitHub link as the remote URL), but be sure to substitute the remote name of `upstream` with any name you deem appropriate. Your own fork does not have to be a fork of the downstream's fork for this; all that matters is that the commit history in the individual branches you push to your own remote line up with the commit history of wherever you're intending to PR your changes to.
-
-```admonish warning title="Before working on your first PR to the space-wizards repo"
-Please make sure you read through the [Freezes & Restrictions](https://github.com/space-wizards/space-station-14/issues/8524) and ensure your idea does not fall into the freezes or if your PR requires some prerequisite before being made. 
-```
 
 ## 4. Branching & Commits
 
@@ -220,7 +216,7 @@ Like I mentioned before, **commits** are just packaged up changes to the code. A
 
 Commits have an author, timestamp, a message, and some code changes attached to them. They also have a really long 'commit hash', a unique identifier used to refer to different commits.
 
-Commits are how history is built up--you can actually view the history of every single commit made to the SS14 repository from the beginning, which is pretty cool:
+Commits are how history is built up--you can actually view the history of every single commit made to the GS14 repository from the beginning, which is pretty cool:
 
 ![](https://i.imgur.com/HQDdw6h.png)
 
@@ -451,7 +447,7 @@ Add a description, a nice title, some screenshots, and hopefully it gets merged.
 
 ## 6. Updating our repository
 
-Maybe it's been a while, a week or two, since your last pull request, and you'd like to make another. Before you do anything, you need to download (**pull**) the code changes from the main SS14 repository into your local repository. If you don't, you'll have out-of-date code and your local changes may not be accurate to how the game will actually run--you might even get **merge conflicts** when you try to PR.
+Maybe it's been a while, a week or two, since your last pull request, and you'd like to make another. Before you do anything, you need to download (**pull**) the code changes from the main GS14 repository into your local repository. If you don't, you'll have out-of-date code and your local changes may not be accurate to how the game will actually run--you might even get **merge conflicts** when you try to PR.
 
 There are two ways to update your repository. Both methods assume you have the `upstream` remote set up properly--if not, go back to earlier in the guide. And of course, if you're developing for a downstream, then you'll want to substitute `upstream` for whatever you named the downstream repo in step 4, to make sure that you're working with that downstream's files instead of upstream's. Make sure you *always* go through the update process when switching between contributing to a fork, and contributing to upstream, otherwise you'll inevitably end up either PRing the entire history of a downstream to upstream, or making PRs to downstream that immediately conflict.
 
@@ -459,7 +455,7 @@ The first method, **fetch+merge**, gives you more control but can be confusing. 
 
 ### 6.1 Fetch + merge method
 
-**Fetching** refers to downloading the new branches and commits from a remote repository--but not doing anything with them just yet (nothing locally will be changed). After we fetch changes from our `upstream` remote (the main SS14 repository), we'll merge them into our local `master` branch.
+**Fetching** refers to downloading the new branches and commits from a remote repository--but not doing anything with them just yet (nothing locally will be changed). After we fetch changes from our `upstream` remote (the main GS14 repository), we'll merge them into our local `master` branch.
 
 When you fetch a remote, it downloads those branches to your local repository and prepends them with the remotes name and a slash. So, when you fetch `upstream`, it'll make a branch called `upstream/master`. As a bonus, you can checkout this remote branch directly if you'd like, and even create a local branch based off it, which is especially useful if you're working with more than just upstream.
 
@@ -541,7 +537,7 @@ You can also `git merge upstream/master [branch-to-merge-to]
 
 Pulling is usually simpler and a lot easier to do.
 
-We'll **pull** from our `upstream` remote (the main SS14 repo) and tell it to merge into our local `master` branch.
+We'll **pull** from our `upstream` remote (the main GS14 repo) and tell it to merge into our local `master` branch.
 
 First, checkout your `master` branch. We covered this earlier. Then,
 
@@ -580,10 +576,10 @@ If either method went well, you've successfully updated your master branch (or w
 
 ## 1. Things to keep in mind
 
-You've more or less learned the workflow for developing features for SS14 Git-wise, but here's some things I'd really like to hammer into your mind:
+You've more or less learned the workflow for developing features for GS14 Git-wise, but here's some things I'd really like to hammer into your mind:
 - When creating a new feature, *always always always* create a new branch off of `master` before committing anything. If you accidentally commit your physics changes to your bike horn branch, you're not in for a fun time, but it is fixable (see Oh Shit, Git?! above)
 - **Never, ever commit RobustToolbox or any submodules like Lidgren.Network** unless you know what you're doing. In the top-level local repository, these submodules are considered 'files', so it's easy to accidentally stage and commit them. Do not do this. See below for how to fix your fuckups if it happens.
-- If you need further help with Git, feel free to ask in the SS14 Discord in #howdoicode.
+- If you need further help with Git, feel free to ask in the GS14 Discord in #howdoicode.
 
 ## 2. A quick example workflow
 
@@ -591,7 +587,7 @@ To get everything in your head and to summarize it all, here's an example workfl
 
 ```python
 git checkout master # Before we create a new branch, we should be on master.
-git fetch upstream # We'll fetch any new changes from the SS14 repo..
+git fetch upstream # We'll fetch any new changes from the GS14 repo..
 git merge upstream/master # ..and merge them into our master branch.
 
 git checkout -b my-new-feature # Make a new branch for the feature
@@ -647,10 +643,10 @@ git branch -d another-feature
 Just for reference, here's a little glossary of Git concepts and terms explained in a little more detail, all in one place.
 
 - **'Branches'** are self-contained versions of the codebase that you can add commits to. The default branch is **master**, but you can make as many as you like.
-- **'Repositories'** are essentially just folders where you can use Git to make changes and keep track of changes made. Local repositories are repositories you have on your computer, and remote repositories are repositories that live on websites like [GitHub](https://github.com/space-wizards/space-station-14). Repositories are made up of a lot of branches.
+- **'Repositories'** are essentially just folders where you can use Git to make changes and keep track of changes made. Local repositories are repositories you have on your computer, and remote repositories are repositories that live on websites like [GitHub](https://github.com/Goob-Station/Goob-Station). Repositories are made up of a lot of branches.
 - **'Remotes'** are names for and links to remote repositories that your local repository can use.
 - **'Submodules'** are repositories that are located inside another repository.
-- **'Forks'** are repositories that are based on another repository. If you're going to make a pull request to the SS14 repo, you need to fork it first.
+- **'Forks'** are repositories that are based on another repository. If you're going to make a pull request to the GS14 repo, you need to fork it first.
 - **'The working tree'** is just every file and folder and what not that's in the repository.
 - **'Staging'** means adding (with `git add`) changes from your working tree into the 'staging area', where  some actions can be performed on it
 - **'Commits'** are snapshots of the repository's working tree at a given time. Basically a save point. A 'commit' is just a list of files that have been changed from the last commit, and the changes that are 'committed' are the changes that you've 'staged'.
@@ -759,7 +755,7 @@ Go into your .git folder (hidden by default--may need to enable showing hidden f
 
 ```
 [remote "upstream"]
-	url = https://github.com/space-wizards/space-station-14
+	url = https://github.com/Goob-Station/Goob-Station
 	fetch = +refs/heads/*:refs/remotes/upstream/*
 ```
 
@@ -767,7 +763,7 @@ Add a line to this that reads `fetch = +refs/pull/*/head:refs/remotes/upstream/p
 
 ```
 [remote "upstream"]
-        url = https://github.com/space-wizards/space-station-14
+        url = https://github.com/Goob-Station/Goob-Station
         fetch = +refs/heads/*:refs/remotes/upstream/*
         fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
 ```
@@ -781,7 +777,7 @@ This method kinda sucks because it takes a while but if you want to check out so
 Not actually that hard but its confusing if you don't know Git very well. Set up a remote to the user's remote repository, fetch their branches, and then checkout their branch:
 
 ```
-git remote add [username] https://github.com/[username]/space-station-14
+git remote add [username] https://github.com/[username]/Goob-Station
 git fetch [username]
 git checkout [username]/[branch name]
 ```

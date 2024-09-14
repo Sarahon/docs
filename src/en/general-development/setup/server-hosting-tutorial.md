@@ -5,11 +5,10 @@ Hosting a local sandbox server for playing around is easy, but setting up a larg
 ## Level 0: Local Sandbox Server
 
 1. Download and install the [.NET 8 Runtime](https://dotnet.microsoft.com/download). You only need "x64" under "run console apps" not "hosting bundle" from the downloads page.
-2. Download the latest version of the server from [our builds page](https://wizards.cdn.spacestation14.com/fork/wizards), for your operating system. If you are looking for another fork, ask that fork if they have a server builds page. Otherwise refer to the [Custom Code](#custom-code) section below.
-3. Extract that to a directory somewhere.
-4. Run `run_server.bat` (Windows) or `Robust.Server` [via terminal on macOS/Linux](#running-the-server-on-macos-or-linux))
-5. Open your Space Station 14 Launcher and click on ``Direct Connect To Server`` and type in ``localhost`` and click connect. You can also add it as a favorite if you click the ``Add Favorite`` button.
-6. When there is a new update. Go back to the second step and just overwrite the files to update your server.
+2. Extract that to a directory somewhere.
+3. Run `run_server.bat` (Windows) or `Robust.Server` [via terminal on macOS/Linux](#running-the-server-on-macos-or-linux))
+4. Open your Space Station 14 Launcher and click on ``Direct Connect To Server`` and type in ``localhost`` and click connect. You can also add it as a favorite if you click the ``Add Favorite`` button.
+5. When there is a new update. Go back to the second step and just overwrite the files to update your server.
 
 ```admonish info
 If you ever wish to develop for the game. You will need a [proper development environment](./setting-up-a-development-environment.md). You cannot use the premade server for this use case.
@@ -179,7 +178,7 @@ This is for people running their own codebase and server and/or those who want a
 [`SS14.Watchdog`](https://github.com/space-wizards/SS14.Watchdog/) (codename Ian) is our server-hosting wrapper thing, similar to TGS for BYOND (but much simpler for the time being). It handles auto updates, monitoring, automatic restarts, and administration. We recommend you use this for proper deployments.
 
 ### Installation
-[`Refer to this`](https://docs.spacestation14.com/en/server-hosting/setting-up-ss14-watchdog.html) for instructions on building and configuring Watchdog.
+[`Refer to this`](https://docs.goobstation.com/en/server-hosting/setting-up-ss14-watchdog.html) for instructions on building and configuring Watchdog.
 
 ### Server Build Configuration
 
@@ -227,7 +226,7 @@ You can slap the HTTP status API behind a reverse proxy if you want. This is rec
 
 ### PostgreSQL Setup
 
-SS14 uses an SQL database to store server data like player slots. By default, an **SQLite** database is automatically used which is sufficient for local testing and small servers. If you want the ability to share the database between multiple servers or such however, the server also supports connecting to **PostgreSQL**.
+GS14 uses an SQL database to store server data like player slots. By default, an **SQLite** database is automatically used which is sufficient for local testing and small servers. If you want the ability to share the database between multiple servers or such however, the server also supports connecting to **PostgreSQL**.
 Support for MySQL/MariaDB isn't currently planned, but we will accept contributions.
 
 Relevant configuration properties, along with default values:
@@ -254,7 +253,7 @@ The game server automatically does migrations when it starts up, you do not have
 
 ### Prometheus Metrics
 
-SS14 supports hosting a metrics server that [Prometheus](https://prometheus.io/) can scrape, with which you can then make fancy graphs in [Grafana](https://grafana.com/) or such. You can find our Grafana dashboards [here](../../community/infrastructure-reference/grafana-dashboards.md), in case they happen to be useful.
+GS14 supports hosting a metrics server that [Prometheus](https://prometheus.io/) can scrape, with which you can then make fancy graphs in [Grafana](https://grafana.com/) or such. You can find our Grafana dashboards [here](../../community/infrastructure-reference/grafana-dashboards.md), in case they happen to be useful.
 
 To configure this, you can use the following config variables:
 
@@ -282,9 +281,9 @@ scrape_configs:
 
 ### Loki Logging
 
-SS14 also supports pushing structured log data to [Loki](https://grafana.com/oss/loki/). Because this is modern DevOps crap the website doesn't say what it actually does but when combined with Grafana you can go and look at and filter logs in a debatably more sane way than bare text files.
+GS14 also supports pushing structured log data to [Loki](https://grafana.com/oss/loki/). Because this is modern DevOps crap the website doesn't say what it actually does but when combined with Grafana you can go and look at and filter logs in a debatably more sane way than bare text files.
 
-No, you do not need Promtail set up for this to work. SS14 pushes directly to Loki.
+No, you do not need Promtail set up for this to work. GS14 pushes directly to Loki.
 
 To configure this, you can use the following config variables:
 
@@ -352,7 +351,6 @@ All of the important links on this page in one convenient place.
 * [.NET 8 Runtime](https://dotnet.microsoft.com/download) (Also included in full .NET 8 SDK)
 * [ASP.NET Core 8 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (Also included in full .NET 8 SDK)
 * [SS14.Watchdog](https://github.com/space-wizards/SS14.Watchdog/)
-* [Official Builds](https://central.spacestation14.io/builds/wizards/builds.html)
 * [Wizard's Den Infrastructure Reference](../../community/infrastructure-reference/wizards-den-infrastructure.md) (server specs)
 * [Public Hub Server Rules](https://docs.spacestation14.com/en/community/space-wizards-hub-rules.html)
 * [Port Forwarding](../../server-hosting/port-forwarding.md)

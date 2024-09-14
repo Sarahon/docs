@@ -1,6 +1,6 @@
 # Metabolism
 
-Metabolism in SS14 is very different to metabolism in SS13. In SS13, reagents simply had a proc `on_mob_life` that was called to determine what should happen. Our system is much more modular and allows for things like different organs metabolizing different reagents, and species-specific metabolisms, as well as overdoses or underdoses without any hassle.
+Metabolism in GS14 is very different to metabolism in SS13. In SS13, reagents simply had a proc `on_mob_life` that was called to determine what should happen. Our system is much more modular and allows for things like different organs metabolizing different reagents, and species-specific metabolisms, as well as overdoses or underdoses without any hassle.
 
 ## Organs & Metabolizers
 

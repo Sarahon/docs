@@ -34,7 +34,7 @@ Parameters the `vv` commands take:
 
 ### Server GC
 
-I recommend you enable [**server GC**](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/workstation-server-gc) to run SS14 tests, *especially* integration tests (it cuts integration test times in *half*). 
+I recommend you enable [**server GC**](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/workstation-server-gc) to run GS14 tests, *especially* integration tests (it cuts integration test times in *half*). 
 
 To enable this in various editors:
 

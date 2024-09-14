@@ -3,11 +3,11 @@ This doc is actively under development and is not fully complete. Things may cha
 ```
 
 # Design Principles
-Here we go into more detail about each of SS14's Core Design Pillars breaking them down further into design principles. Once again these are not hard requirements, but expect to recieve heavy scruitiny on your design if you aren't following these. 
+Here we go into more detail about each of GS14's Core Design Pillars breaking them down further into design principles. Once again these are not hard requirements, but expect to recieve heavy scruitiny on your design if you aren't following these. 
 
 ## Chaos
 
-The inherent complexity of Space station 14's sandbox combined with the unpredictabiltiy of human players creates a truely chaotic environment where anything can happen. This should be embraced when designing mechanics to fit SS14, especially with regards to giving players opertunities to cause mischief.
+The inherent complexity of Goob Station's sandbox combined with the unpredictabiltiy of human players creates a truely chaotic environment where anything can happen. This should be embraced when designing mechanics to fit SS14, especially with regards to giving players opertunities to cause mischief.
 
 One key mantra to use when making new mechanics is "nothing is perfect", conceptually this means that **your mechanic should not allow for "perfect" solutions**. Make sure to sprinkle plently of opertunities for players to intentionally or unintentionally screw up while interacting with your mechanic.
 
@@ -17,23 +17,23 @@ New mechanics should also be integrated with existing mechanics when possible, t
 
 ## Seriously Silly
 
-SS14 at it's heart is a horror comedy: on one hand you have a souless megacorp that cares nothing of its employees while exposing them to the horrific dangers of unknown space, while on the other you have clowns and incompetent assistants causing all sorts of hilarious disasters.
+GS14 at it's heart is a horror comedy: on one hand you have a souless megacorp that cares nothing of its employees while exposing them to the horrific dangers of unknown space, while on the other you have clowns and incompetent assistants causing all sorts of hilarious disasters.
 
-The situations that regularly happen in SS14 are absolutely unhinged yet players generally take them seriously. When you are creating content or mechanics, you should lean into this dissonance and embrace the fact that something can be silly and serious at the same time. 
+The situations that regularly happen in GS14 are absolutely unhinged yet players generally take them seriously. When you are creating content or mechanics, you should lean into this dissonance and embrace the fact that something can be silly and serious at the same time. 
 
 When creating a new mechanic try to introduce ways that things can go horribly, horribly and hilariously wrong (or right depending on who you ask). Try to create situations that would be hilarious to hear told as a story but would be terrifying to be in as a player.
 
 ## Dynamic Environment
 
-The environment of a SS14 round is as much a character as the players, and can dramatically change over the course of a round. Players have the complete freedom to shape the gameworld the way they wish whether by building, destroying or changing things on the station. 
+The environment of a GS14 round is as much a character as the players, and can dramatically change over the course of a round. Players have the complete freedom to shape the gameworld the way they wish whether by building, destroying or changing things on the station. 
 
-SS14 is a game where it should be possible for players to decide to "make their own station with blackjack and hookers", and go do just that, or continue playing a round and rebuild the station after it was sliced in half (Both of these have occured multiple times in the history of SS13 and SS14). 
+GS14 is a game where it should be possible for players to decide to "make their own station with blackjack and hookers", and go do just that, or continue playing a round and rebuild the station after it was sliced in half (Both of these have occured multiple times in the history of SS13 and SS14). 
 
 Because of this, **Mechanics *cannot* be location specific or require items that cannot be obtained after roundstart**. The decision to call the shuttle should never be made due to losing an uncraftable item or being unable to rebuild something required for a game mechanic.
 
 ## Intuitive and Inter-Connected Simulation
 
-If SS14's heart is being a horror comedy, then SS14's soul is simulation. SS13/14 has come a long way from the simple atmospherics simulator that Exadv1 wrote all those ages ago, yet at its Core SS14 features indepth atmospheric and power simulation. 
+If SS14's heart is being a horror comedy, then SS14's soul is simulation. SS13/14 has come a long way from the simple atmospherics simulator that Exadv1 wrote all those ages ago, yet at its Core GS14 features indepth atmospheric and power simulation. 
 
 Part of the unique experience of Spacestation 14 is interacting with its indepth simulation gameplay while dealing with the chaos that comes from antagonists and random events. SS14's indepth simulation and numerous inter-system interactions work for the average player because "They just make sense".
 

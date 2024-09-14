@@ -4,7 +4,7 @@
 
 ### `System.DllNotFoundException` on ARM (e.g. M1) macs
 
-We do not currently support running SS14/Robust natively on ARM macs. Install x64 .NET and run the client with that instead, it should work via Rosetta 2 emulation.
+We do not currently support running GS14/Robust natively on ARM macs. Install x64 .NET and run the client with that instead, it should work via Rosetta 2 emulation.
 
 ## Client
 
@@ -14,7 +14,7 @@ We do not currently support running SS14/Robust natively on ARM macs. Install x6
 
 Some written out error codes you may have, for ctrl+f'ing: "An attempt was made to access a socket in a way forbidden by its access permissions.", "Only one usage of each socket address (protocol/network address/port) is normally permitted."
 
-By default, the game server needs ports 1212/UDP and 1212/TCP to start. Common occurrence here can be *already running an SS14 server which uses the ports*.
+By default, the game server needs ports 1212/UDP and 1212/TCP to start. Common occurrence here can be *already running an GS14 server which uses the ports*.
 
 #### Windows users
 

@@ -33,7 +33,7 @@ Their definition consists of:
         factor: 2
 ```
 
-For more info see: [SS14 Content: Reagent folder](https://github.com/space-wizards/space-station-14/tree/master/Resources/Prototypes/Reagents) or [SS14 Content:ReagentPrototype.cs](https://github.com/space-wizards/space-station-14/blob/ca50a5f9934a399826306659f298f0098251e4eb/Content.Shared/Chemistry/Reagent/ReagentPrototype.cs)
+For more info see: [GS14 Content: Reagent folder](https://github.com/Goob-Station/Goob-Station/tree/master/Resources/Prototypes/Reagents) or [SS14 Content:ReagentPrototype.cs](https://github.com/space-wizards/space-station-14/blob/ca50a5f9934a399826306659f298f0098251e4eb/Content.Shared/Chemistry/Reagent/ReagentPrototype.cs)
 
 ## Reagent Effects & Conditions
 

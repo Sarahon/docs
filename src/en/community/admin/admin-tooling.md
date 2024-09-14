@@ -1,6 +1,10 @@
 # Admin Tooling
 
-The admin tooling in SS14 is hopefully not too complicated, but some things could do with some explanation.
+``` admonish info
+A video guide on admin tooling for the Goob Station admin is in the works
+```
+
+The admin tooling in GS14is hopefully not too complicated, but some things could do with some explanation.
 
 ## Admin Menu
 
@@ -109,7 +113,7 @@ Notes can be accessed using the `Admin` verb category, or at the bottom of the A
 
 ---
 
-A couple things to discuss about how SS14 works before the VV menu can really be useful to you:
+A couple things to discuss about how gs14 works before the VV menu can really be useful to you:
 
 - An 'entity' is an object in game--walls, players, projectiles, items, etc. Each entity has a unique `EntityUid` corresponding to them, which is the number `15199` you see at the top left next to the entity's name.
 - Each entity (generally) has a prototype ID, or which 'type' of entity it is. This is the `MobObserver` string you see at the top left.

@@ -6,7 +6,7 @@ See the repo: https://github.com/space-wizards/SS14.Changelog
 
 ## RSS feed
 
-The publishing system can automatically publish the changelog to an RSS feed. This is done from [`actions_changelog_rss.py`](https://github.com/space-wizards/space-station-14/blob/master/Tools/actions_changelog_rss.py) which is ran from the [publishing workflow](https://github.com/space-wizards/space-station-14/blob/master/.github/workflows/publish.yml).
+The publishing system can automatically publish the changelog to an RSS feed. This is done from [`actions_changelog_rss.py`](https://github.com/Goob-Station/Goob-Station/blob/master/Tools/actions_changelog_rss.py) which is ran from the [publishing workflow](https://github.com/Goob-Station/Goob-Station/blob/master/.github/workflows/publish.yml).
 
 ### Server setup
 
@@ -72,7 +72,7 @@ HOST_KEYS = [
 
 # RSS feed parameters, change these
 FEED_TITLE       = "Space Station 14 Changelog"
-FEED_LINK        = "https://github.com/space-wizards/space-station-14/"
+FEED_LINK        = "https://github.com/Goob-Station/Goob-Station/"
 FEED_DESCRIPTION = "Changelog for the official Wizard's Den branch of Space Station 14."
 FEED_LANGUAGE    = "en-US"
 FEED_GUID_PREFIX = "ss14-changelog-wizards-"

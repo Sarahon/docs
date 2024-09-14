@@ -1,6 +1,11 @@
 ﻿# Progress Report Creation
 *A short handbook about making a progress report.*
 
+``` admonish warning
+this doesn't apply to goob and is only here temporarily as a reference for when I actually write a guide for our goob progress reports
+```
+
+
 ### Checklist
 - Set an explicit start- & end-date of contributions you want to outline.
 - Create a Trello board based off of the Progress Report Trello Template.

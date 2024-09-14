@@ -79,7 +79,7 @@ To spawn the items in game from a prototype, you can press **F5** to open the **
 Your goal is to make a **Clown Horn** that **honks** when you use it. This requires us to have a component on the entity with a sound to play and system that plays that sound after it's used in hand (clicked, or activated with Z).
 
 ```admonish info
-Normally, you would want to search through the codebase and ask some other coders to see whether a component/system that does this already exists. In this case, ```EmitSoundOnUse``` *does indeed exist* in the main SS14 codebase. But for the sake of this tutorial, we'll pretend it doesn't and try to implement it ourselves!
+Normally, you would want to search through the codebase and ask some other coders to see whether a component/system that does this already exists. In this case, ```EmitSoundOnUse``` *does indeed exist* in the main GS14 codebase. But for the sake of this tutorial, we'll pretend it doesn't and try to implement it ourselves!
 ```
 
 **To start off**, let's make a simple clown horn prototype. I will make a new file called ```clown_horn.yml``` and add it to the ```Resources/Prototypes/Goobstation/Entities/Objects/Fun/``` folder.

@@ -1,7 +1,7 @@
-# Wizards Den Banning Policy
+# Goob Station Banning Policy
 
 ```admonish info
-This is the ban policy for Wizard's Den servers. It applies only to our first-party Wizard's Den servers. The admin policy can be found at [Admin Policy](./wizards-den-admin-policy.md)
+This is the ban policy for Goob Station. It applies only to our Goob Station servers. The admin policy can be found at [Admin Policy](https://docs.goobstation.com/en/community/admin/banning-policy.html)
 ```
 
 # Definitions
@@ -13,6 +13,8 @@ This is the ban policy for Wizard's Den servers. It applies only to our first-pa
 - **Game ban:** A ban from the servers. A player who is *game banned* cannot connect to the servers during the ban. These bans are sometimes called *server bans*.
 - **Role ban:** A ban from a specific role or roles.
 - **Ban evasion:** Attempting to circumvent an active ban.
+- **Soft Voucher Ban:** A ban usually applied due to repeat offenses and are only appealable after two months.
+- **Ban evasion:** A ban usually applied due to repeat offenses after a Soft Voucher Ban or Ban Evasion and are only appealable after six months.
 
 ## Special Banning Requirements
 
@@ -20,9 +22,13 @@ This is the ban policy for Wizard's Den servers. It applies only to our first-pa
 
 Permanent bans should typically only be placed as the result of an unsuccessful appeal of an indefinite ban or a voucher ban. Except for cases of ban evasion after an accepted voucher ban, a vote by the admin team is required to place a permanent ban. Placing a permanent ban may be an option in a vote for the appeal. It is recommended that any indefinite ban after a prior voucher ban within 6 months of the date of the current ban be upgraded to a permanent ban.
 
-### Voucher Bans
+### Soft And Hard Voucher Bans
 
-Voucher bans should typically only be placed as the result of an unsuccessful appeal of an indefinite ban. Except for cases of ban evasion, a vote by the admin team is required to place a voucher ban. Placing a voucher ban may be an option in a vote for the appeal. Unless the prior indefinite bans were solely for contacting the player, it is recommended that any indefinite ban after a prior indefinite ban within 6 months of the date of the current ban be upgraded to a voucher ban.
+**Voucher Bans** usually occur if a player is too problematic and must get a voucher (Prove of good behavior.) from another server in order for their appeal to be accepted. 
+
+**Soft Voucher Bans** are done if the player receives multiple offenses after an appeal ban. Soft Voucher Bans are only appealable after 2 months and the banned player appeals with a voucher from a well known Space Station 13 or 14 server.
+
+**Hard Voucher Bans** are applied if the player receives multiple offenses after being Soft Voucher banned or if the player evades an ongoing ban. Hard Voucher Bans are only appealable after 6 months and require a voucher from a well known Space Station 13 or 14 server.
 
 # Banning Guidelines
 
@@ -102,18 +108,17 @@ Rule violations not in the offense table can still have bans applied, but have n
 | Non-grouping | Bigotry/discrimination[^discrimination] | Indef GB | | | |
 | Non-grouping | ERP | Indef GB | | | |
 | Non-grouping | Sexual content | W - 3d GB | 7d GB | Indef GB | |
-| Non-grouping | Metacommunications | Indef GB | | | |
-| Non-grouping | Ban Evasion | Voucher Ban | If after an accepted voucher ban, permanent ban.<br/>Otherwise, extend voucher ban to 6 months from evasion attempt. | | |
+| Non-grouping | Metacommunications | W - Indef GB | Indef GB | | |
+| Non-grouping | Ban Evasion | Hard Voucher Ban | If after an accepted hard voucher ban, permanent ban.<br/>Otherwise, extend hard voucher ban to 6 months from evasion attempt. | | |
+| Non-grouping | Multi-keying | W - **Indef** GB | Indef GB | | |
+| Non-grouping | Ahelp misuse in bad faith[^badFaith] | **W** - 12hr GB | 12hr - 3d GB | **7d** - 7.5d GB | |
+| Non-grouping | Threats to ahelp | **W** - 12hr GB | 12hr - 3d GB | **7d** - 7.5d GB | |
+| Non-grouping | Under 14 | Indef GB | | | |
+| Non-grouping | Bad character name[^requiresIntent] | **W** - 12hr GB | **12hr** - 3d GB | **7d** - 7.5d GB | |
 | Language | Non-english chat | W | W - 12hr GB | 3d GB | **7d** - 7.5d GB |
 | Language | Solely non-english chat | W | Indef GB | | |
 | Exploits | Bugs/exploits | **W** - 7d GB | 12hr - 7d GB | 3d - 15d GB | 7d - 15d GB |
 | Exploits | Use of macros | W | W - 12hr GB | 3d GB | **7d** - 7.5d GB |
-| Non-grouping | Multi-keying | W - **Indef** GB | Indef GB | | |
-| Non-grouping | Ahelp misuse in bad faith[^badFaith] | **W** - 12hr GB | 12hr - 3d GB | **7d** - 7.5d GB | |
-| Non-grouping | Threats to ahelp | **W** - 12hr GB | 12hr - 3d GB | **7d** - 7.5d GB | |
-| Non-grouping | Under 16 | Indef GB | | | |
-| Non-grouping | Bad character name[^requiresIntent] | **W** - 12hr GB | **12hr** - 3d GB | **7d** - 7.5d GB | |
-| Metagaming | IC in OOC[^positiveException] | W | W - 12hr GB | 3d GB | **7d** - 7.5d GB |
 | AI Laws | Major failure to follow silicon laws | W - 5d RB | 3d - 7.5d RB | Indef RB | |
 | AI Laws | Minor failure to follow silicon laws | W | W - 5d RB | 3d - 7.5d RB | Indef RB |
 | Familiars | Familiar griefing master | 12hr GB | 3d GB | **7d** - 7.5d GB | |
@@ -124,7 +129,8 @@ Rule violations not in the offense table can still have bans applied, but have n
 | Metagaming | Using info from death[^infoFromDeath] | W - 12hr GB | 12hr - 3d GB | 3d - 7.5d GB | |
 | Metagaming | Using info from past life | 12hr - 48hr GB | 3d GB | **7d** - 7.5d GB | |
 | Metagaming | Metagaming round type | W - 12hr GB | 12hr - 3d GB | 3d - 7.5d GB | |
-| Griefing | Damage/disruption to arrivals/arrivals shuttle | 12hr - 3d GB | 3d - 7d GB | 7d - 15d GB | |
+| Metagaming | IC in OOC[^positiveException] | W | W - 12hr GB | 3d GB | **7d** - 7.5d GB |
+| Powergaming | Preparing items not needed IC | W | W - 12hr GB | 12hr - 3d GB | 3d - 7.5d GB |
 | Self-antag | Self-antag[^excludingEscalationIssues] | W - 12hr GB | 12hr - 3d GB | **7d** - 7.5d GB | |
 | Self-antag | Station sabotage[^stationSabotage] | W - 3d GB | 12hr - 7d GB | 14d - 15d GB | |
 | Self-antag | Cults/riots/revolutions | **12hr** - 3d GB | 12hr - **3d** - 7d GB | **7d** - 7.5d GB | |
@@ -135,11 +141,12 @@ Rule violations not in the offense table can still have bans applied, but have n
 | Griefing | Early massive station sabotage[^antagOnly] | **W** - 12hr GB | 12hr - 3d GB | **7d** - 7.5d GB | |
 | Griefing | Unreasonable failure to follow an order from a team leader | W - 5d RB | 3d - 7d RB | Indef RB | |
 | Griefing | Harassing a player/role/department with no IC conflict | W - 12hr GB | 12hr - 3d GB | **7d** - 7.5d GB | |
+| Griefing | Abandoning a role[^abandoningRole] | W - 5d RB | 3d - 7d RB | Indef RB | |
+| Griefing | Antag rolling | 12hr - 3d GB | 3d - 7d GB | **7d** - 7.5d GB | |
+| Griefing | Damage/disruption to arrivals/arrivals shuttle | 12hr - 3d GB | 3d - 7d GB | 7d - 15d GB | |
 | Escalation | Over escalation[^eachVictim] | W | 12hr GB | 3d GB | **7d** - 7.5d GB |
 | Escalation | RDM[^eachVictim] | 12hr GB | 3d GB | **7d** - 7.5d GB | |
 | Escalation | Over escalation or RDM that is a secondary result of station sabotage[^stationSabotageRDM] | 12hr GB | 3d GB | **7d** - 7.5d GB | |
-| Griefing | Abandoning a role[^abandoningRole] | W - 5d RB | 3d - 7d RB | Indef RB | |
-| Griefing | Antag rolling | 12hr - 3d GB | 3d - 7d GB | **7d** - 7.5d GB | |
 | Competence | Unreasonable incompetence in role | W - **3d** - 7d RB | 7d - 15d RB | Indef RB | |
 | Competence | Abuse of a position of authority | 3d - 7d RB | 7d - 15d RB | Indef RB | |
 | Competence | Taking actions a reasonable person would view as to be to the detriment of the station as security/command | 3d - 7d RB | 7d - 15d RB | Indef RB | |
@@ -308,7 +315,7 @@ Trial admins may only process appeals if each action they take, excluding intern
 	6. Ask the player questions that are important for the processing of the appeal.
 	7. Attempt to allow the player to respond to information which will be considered in the appeal that it would be unfair to not allow them the opportunity to address.
 7. Run a vote
-	- An attempt to contact the banning admin must have been made prior to starting a vote. A ping in #game-admin-appeals-meta notifying them about the appeal and 24 hours of time to respond is considered to be a sufficient attempt.
+	- An attempt to contact the banning admin must have been made prior to starting a vote. A ping in the #ban-appeals forum post notifying them about the appeal and 24 hours of time to respond is considered to be a sufficient attempt.
  	- Votes must run at least 24 hours unless the net vote criteria is met.
 	- Votes must not be closed if there is ongoing discussion unless the net vote criteria is met.
 	- Votes must be made in one of the designated internal appeals discussion channels.

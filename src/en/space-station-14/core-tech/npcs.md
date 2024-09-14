@@ -1,6 +1,6 @@
 # NPCs
 
-NPCs in SS14 use a hierarchical task network (HTN). The best reference to understand what this is from [gameaipro](http://www.gameaipro.com/GameAIPro/GameAIPro_Chapter12_Exploring_HTN_Planners_through_Example.pdf). The diagram on page 9 is especially useful.
+NPCs in GS14 use a hierarchical task network (HTN). The best reference to understand what this is from [gameaipro](http://www.gameaipro.com/GameAIPro/GameAIPro_Chapter12_Exploring_HTN_Planners_through_Example.pdf). The diagram on page 9 is especially useful.
 
 ## Quick Start
 

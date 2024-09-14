@@ -79,7 +79,7 @@ Fixtures describe the shape and material properties of entities for purposes of 
 
 Fixtures that are not `hard` do not cause an actual collison, but still raise a collision event. This is useful for implementing things like slipperiness.
 
-Each fixture is a member of any number of collision layers (field `layer`). Each fixture also has any number of collision masks (field `mask`). Entity *A* collides with entity *B* if *A*'s `mask`s intersect with *B*'s `layer`s. A list of layers are defined in [Content.Shared/Physics/CollisionGroup.cs](https://github.com/space-wizards/space-station-14/blob/master/Content.Shared/Physics/CollisionGroup.cs).
+Each fixture is a member of any number of collision layers (field `layer`). Each fixture also has any number of collision masks (field `mask`). Entity *A* collides with entity *B* if *A*'s `mask`s intersect with *B*'s `layer`s. A list of layers are defined in [Content.Shared/Physics/CollisionGroup.cs](https://github.com/Goob-Station/Goob-Station/blob/master/Content.Shared/Physics/CollisionGroup.cs).
 
 # CollideOnAnchorComponent
 This is a performance-related component. It toggles (on or off via datafield) a body's collision when its anchoring state changes.

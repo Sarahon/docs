@@ -37,7 +37,7 @@ If you're using them to line a "rich feeling" room, say, the HoP's office, opt f
 # Mapping Checklist
 ===========
 
-This checklist is a general guide on what items are required for typical SS14 station maps. Small maps and non-standard maps may not be able to fit all the content specified, so use this as general guidelines only.
+This checklist is a general guide on what items are required for typical GS14 station maps. Small maps and non-standard maps may not be able to fit all the content specified, so use this as general guidelines only.
 
 When necessary, the entity ID will be in brackets if it differs greatly from the name of the item. In most cases, you can just search the name. Names with suffixes such as `[filled]` indicate a variant of an entity.
 

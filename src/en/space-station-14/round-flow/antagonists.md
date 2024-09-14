@@ -3,7 +3,7 @@ This doc is actively under development and is not fully complete. Things may cha
 ```
 
 # Antagonist Design
-Antagonists are one of the fundamental pillars of Spacestation 14, serving as a way to inject chaos into a round. Historically the implementation of different antags has been very hit or miss, ranging from wildly successful (space wizard) to contentious and disliked (Revolutionaries).
+Antagonists are one of the fundamental pillars of Goob Station, serving as a way to inject chaos into a round. Historically the implementation of different antags has been very hit or miss, ranging from wildly successful (traitors) to contentious and disliked (revolutionaries).
 
 The goal of this document is to lay out core design principles for creating antagonists that players enjoy playing as and against, in addition to categorizing the possible types of antagonists.
 

@@ -110,6 +110,6 @@ May be the wrong section but admins can also use this to act as "Central Command
 I highly disagree, I doupt it will reduce situational awareness more then it already is. I have already went over how someone monitoring the radio channel for messages directed to them is already a chore. PDA messaging names can easily be changed by using someone elses ID therefore its a good idea to not go to maints like they told you to and instead show the message to security.
 
 ##### Why not use fax?
-Is this really a question? First of all not everyone has a fax, second you have to be close to hear it go off printing. And unless you check your fax periodicly for new faxes messages can be missed. And even if you do check it its probably boykisser ASCII spammed 10 times. Also why are we using *faxes* in 2563 or whatever year SS14 takes year in.
+Is this really a question? First of all not everyone has a fax, second you have to be close to hear it go off printing. And unless you check your fax periodicly for new faxes messages can be missed. And even if you do check it its probably boykisser ASCII spammed 10 times. Also why are we using *faxes* in 2563 or whatever year GS14 takes year in.
 
 These were all the conserns I could find from discord.

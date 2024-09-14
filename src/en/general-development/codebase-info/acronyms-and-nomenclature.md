@@ -2,6 +2,7 @@
 
 | Shorthand                | Meaning                                                                                                        |
 |:------------------------ |:-------------------------------------------------------------------------------------------------------------- |
+| GS14                     | Goob Station. The coolest Space Station 14 server.                                                             |
 | SS14                     | Space Station 14. Remake of Space Station 13 (SS13).                                                           |
 | BYOND                    | The game engine for SS13.                                                                                      |
 | RobustToolbox, Engine    | SS14's game engine.  (Think BYOND).                                                                            |
@@ -14,7 +15,6 @@
 | .dmi, DMI                | BYOND/SS13's sprite file format. Converted to an RSI for our usage.                                            |
 | .rsi, RSI                | Robust Station Images. SS14's image "file" format (actually a folder).                                         |
 | PVS                      | Potentially Visible Set. Stops the server from sending out-of-range entities to clients.                       |
-| PJB, PJB3005             | Pieter-Jan Briers. Supreme ^Nerd^ overlord of SS14.                                                            |
 | VSC, VSCode              | Visual Studio Code. Not the same as VS.                                                                        |
 | VS                       | Visual Studio Community 2017/19. Not the same as VSC. The IDE for people who can't get a Rider license.        |
 | Rider                    | [A crossplatform IDE for C#.](https://www.jetbrains.com/rider/) (Can be obtained for free as a student).       |

@@ -1,11 +1,11 @@
 # How do I code? (I don't know how to program.)
-Below are some useful links for learning programming. If you get stuck, don't be afraid to ask us questions in the `#howdoicode` channel on our [discord](https://discord.gg/ss14). If you can't find what you're looking for in one of these links, try googling "how to do X in csharp". You'll usually find several examples.
+Below are some useful links for learning programming. If you get stuck, don't be afraid to ask us questions in the `#dev-help` channel on our [discord](https://discord.goobstation.com). If you can't find what you're looking for in one of these links, try googling "how to do X in csharp". You'll usually find several examples.
 
-If you have some experience (read: understand things like "classes" and "control flow") and would rather learn by doing, try looking at the Issues marked as [Beginner Friendly](https://github.com/space-wizards/space-station-14/labels/Beginner%20Friendly) on the Github repo. They are usually pretty simple and someone can always help you out on the discord. 
+If you have some experience (read: understand things like "classes" and "control flow") and would rather learn by doing, try looking at the Issues on [the Github](https://github.com/Goob-Station/Goob-Station/issues) on the Github repo. They are usually pretty simple and someone can always help you out on the discord. 
 
 You may have come here simply wanting to add items. It's possible to do that without learning how to program, though you'll be limited in what kind of functionality you can give them. You'll still probably need to learn Git (read on!)
 
-If you want to do anything more complicated, I recommend you read the rest of [**Getting Started**](./setting-up-a-development-environment.md), and then start reading **SS14 By Example**, which goes through many common activities and how to do them.
+If you want to do anything more complicated, I recommend you read the rest of [**Getting Started**](./setting-up-a-development-environment.md), and then start reading **GS14 By Example**, which goes through many common activities and how to do them.
 
 ## Tutorials
 
@@ -30,11 +30,11 @@ Reference sheet presented through a massive C# file. Again, this is more useful 
 ### Git
 Git is "version control software", aka the reason a bunch of people can contribute to one project without it devolving into chaos. Git's probably going to seem like opaque bigbrain nonsense for a bit, but then it clicks and then you, too, get to try to convince people "it's actually really simple, see, imagine you have a tree--"
 
-**[Git for the SS14 Developer](./git-for-the-ss14-developer.md)**
+**[Git for the GS14 Developer](./git-for-the-ss14-developer.md)**
 Good on its own and has a lot of resources for learning Git further. Explains the what, the why, its role in SS14, etc.
 
 **[Learn Git Branching](https://learngitbranching.js.org/)**
-An interactive, gamified way of learning Git. Plays well with "Git for the SS14 Developer" so you can develop a more intuitive understanding of what it's talking about.
+An interactive, gamified way of learning Git. Plays well with "Git for the GS14 Developer" so you can develop a more intuitive understanding of what it's talking about.
 
 ### Other
 

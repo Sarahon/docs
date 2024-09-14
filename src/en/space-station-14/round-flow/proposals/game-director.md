@@ -19,7 +19,7 @@ running for instance `addgamerule CalmDynamic`. A later PR could put them into a
 
 ## Background
 
-Events in SS14 trigger challenges or benefits for players. They might spawn spiders, dragons or zombies. Traitors 
+Events in GS14 trigger challenges or benefits for players. They might spawn spiders, dragons or zombies. Traitors 
 come on board, Nukies attack or vents spew grease. Pizza might be delivered or power is turned off to sections of the station.
 
 Historically events trigger in a few ways:
@@ -105,7 +105,7 @@ These are called `endIfAnyWorse` and `endIfAllBetter`, useful if there is too mu
 Once a story beat has ended, the director will move to the next beat in the story. Once a given story has finished, the 
 director will pick one of its stories at random to start. 
 
-Player experience in SS14 should have both its highs and lows. A peaceful extended shift can become boring with no challenges 
+Player experience in GS14 should have both its highs and lows. A peaceful extended shift can become boring with no challenges 
 to overcome together. An overly intense battle might kill half the crew and leave the station in disorder that we cannot recover from. 
 What we want is a middle ground with some variation.
 
