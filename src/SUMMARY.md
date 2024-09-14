@@ -3,6 +3,12 @@ Goob Station Docs
 
 [Goob Station Docs](index.md)
 
+For Players
+====
+
+----------------------
+- [Space Law](en/temporary/space-law.md)
+
 Meta
 ====
 
