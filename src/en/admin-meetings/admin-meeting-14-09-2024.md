@@ -1,7 +1,6 @@
 # Admin Meeting 14-09-2024
 
 ```admonish info
-
 ## Attendees
 
 <!-- List of meeting attendees -->
