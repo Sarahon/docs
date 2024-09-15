@@ -4,11 +4,11 @@ Hosting a local sandbox server for playing around is easy, but setting up a larg
 
 ## Level 0: Local Sandbox Server
 
-1. Download and install the [.NET 8 Runtime](https://dotnet.microsoft.com/download). You only need "x64" under "run console apps" not "hosting bundle" from the downloads page.
+1. Download the latest build from https://cdn.networkgamez.com/fork/goobstation/, Windows x64 if you're on Windows, macOS x64 if you're on macOS, Linux x64 if you're on Linux, and Linux ARM64 if you're on an ARM linux machine like a Raspberry Pi (server builds are headless).
 2. Extract that to a directory somewhere.
 3. Run `run_server.bat` (Windows) or `Robust.Server` [via terminal on macOS/Linux](#running-the-server-on-macos-or-linux))
 4. Open your Space Station 14 Launcher and click on ``Direct Connect To Server`` and type in ``localhost`` and click connect. You can also add it as a favorite if you click the ``Add Favorite`` button.
-5. When there is a new update. Go back to the second step and just overwrite the files to update your server.
+5. When there is a new update, re-do the first and second step and just overwrite the files to update your server.
 
 ```admonish info
 If you ever wish to develop for the game. You will need a [proper development environment](./setting-up-a-development-environment.md). You cannot use the premade server for this use case.
