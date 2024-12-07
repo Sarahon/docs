@@ -40,9 +40,9 @@ If the sentence exceeds or is exactly 20 minutes, you may perma the person. cont
 ```
 ## **V Degree** 
 
-**Permanent:** Any prisoner that is sentenced to over 20 minutes or more of crimes may be placed into permanent(Perma) confinement, **Treatment Of Prisoners** must be upheld while in their full duration. They then must be transported in cuffs to centcomm at the end of the shift for further processing.
+**Permanent:** Any prisoner whose sentence exceeds 20 minutes may be placed into permanent confinement (perma). Standard **Treatment Of Prisoners** must be respected for the duration of their stay, just the same as a standard brig prisoner. Prisoners in permanent confinement must be brought onto the evacuation shuttle (evac) at the end of the shift for processing.
 
-**Execution:** Execution may be carried out on truly problematic individuals. All executions **MUST** be confirmed by and agreed with the captain. Execution methods may be up to the handlers discretion, though, within reason a prisoner may also request a specific execution method if they are so inclined.
+**Execution:** Execution may be carried out on extremely problematic individuals. All executions **MUST** be approved of by the Captain via **INFORMED** consent. If the Captain is not given a full and fair view of the situation, you may be subjected to serious consequences. Methods of execution are at the discretion of the handler, however it's recommended to ask the prisoner which method they would prefer and use that one.
 
 ## Crimes
 ### I Degree
