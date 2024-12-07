@@ -4,7 +4,7 @@ Goob Station operates under abbreviated space law. All crew, passengers, and vis
 
 Prisoners still have certain rights that must be upheld by law enforcement:
 
-* Prisoners must be granted adequate medical care. They should also be provided psychiatric and spiritual counselling if requested and avaliable.
+* Prisoners must be granted adequate medical care. They should also be provided psychiatric and spiritual counselling if requested and available.
 * Prisoners must be allowed access to communications equipment (Radios) so long as they are not abused.
 * Prisoners must be granted clothing, food, water, shelter and safety. If the brig is no longer safe, confinement must be established in another location.
 * Prisoners must be given access to legal counsel during an interrogation if requested and available.
@@ -40,7 +40,7 @@ If the sentence exceeds or is exactly 20 minutes, you may perma the person. cont
 ```
 ## **V Degree** 
 
-**Permanenet:** Any prisoner that is sentenced to over 20 minutes or more of crimes may be placed into permanent(Perma) confinement, **Treatment Of Prisoners** must be upheld while in their full duration. They then must be transported in cuffs to centcomm at the end of the shift for further processing.
+**Permanent:** Any prisoner that is sentenced to over 20 minutes or more of crimes may be placed into permanent(Perma) confinement, **Treatment Of Prisoners** must be upheld while in their full duration. They then must be transported in cuffs to centcomm at the end of the shift for further processing.
 
 **Execution:** Execution may be carried out on truly problematic individuals. All executions **MUST** be confirmed by and agreed with the captain. Execution methods may be up to the handlers discretion, though, within reason a prisoner may also request a specific execution method if they are so inclined.
 
