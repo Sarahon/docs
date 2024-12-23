@@ -1,20 +1,31 @@
-# Goob Station Admin List
+# Goob Station Game Staff List
 
 ```admonish warning
-under construction zoldorf the wizard is not a goob station admin
+The list changes on the 1st of every month. The entire staff list can be found on the Goob Station forums at https://forums.goobstation.com/staff/
 ```
 
-This document shows all current Admins on the project. Along with their Discord contacts.
-
-The format is as follows
-
-**Discord (ID)**
+Head Of Staff:
+- Hawk_Tuah
+- Piras314
+- Tikibomb
 
 Head Admins:
-- [ZoldorfTheWizard]- @zoldorf (140921734109855744)
+- Tikibomb
 
 Admins:
-- [ZoldorfTheWizard] - @zoldorf (140921734109855744)
+- sugar
+- BeeRobyn
+- CodyPencil
+- Cbozo
+- nymhole
+- Ratissar
+- terezi4real
+- NeKognitoHazard
+- Cheki
+- Redcreeper
 
 Trial Admins:
-- [ZoldorfTheWizard] - @zoldorf (140921734109855744)
+- Rouge2t7
+- DanceMan
+- Archylle
+- CerberusWolfie
