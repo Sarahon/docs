@@ -1,7 +1,7 @@
 # Goob Station Game Staff List
 
 ```admonish warning
-The list changes on the 1st of every month. The entire staff list can be found on the Goob Station forums at https://forums.goobstation.com/staff/
+The list changes on the 1st of every month. All the names mentioned on the list are the staff's SS14 usernames. The entire staff list can be found on the Goob Station forums at https://forums.goobstation.com/staff/ 
 ```
 
 Head Of Staff:
