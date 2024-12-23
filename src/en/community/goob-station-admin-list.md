@@ -10,7 +10,7 @@
 - Tikibomb
 
 ## Full Game Admins:
-- sugar
+- NoSugarPlumNovember
 - BeeRobyn
 - CodyPencil
 - Cbozo
