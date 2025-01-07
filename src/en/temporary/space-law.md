@@ -23,6 +23,11 @@ Prisoners still have rights that must be upheld by law enforcement:
 * A personnel search is a seizure of the objects in a person's backpack, hands, coat, belt, pockets, and hat. If any contraband is found during a search the officer may choose to further the search into a detainment or simply confiscate the restricted items. You may also confiscate items that were used in the aforementioned crime. After the search is conducted all legal items are to be returned to the person. Loss of personal property should be taken seriously.
 
 * A crewmate may legally decline any search conducted without a warrant while the alert level is green. If the alert level of the station is blue or above, random searches may be conducted by security without explicit permission.
+* 
+```Tips and tricks"
+Please use the 'Criminal records computer' diligently. This will make your life a lot easier as security.
+You can mark anyone as suspicious and it will show up on the security hud. Allowing you to keep track of players.
+```
 
 ## Implantation
 
