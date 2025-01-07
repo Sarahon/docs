@@ -1,6 +1,7 @@
+# Space Law
+
 Goob Station operates under abbreviated space law. All crew, passengers, and visitors aboard the station are expected to know and follow these laws.
 
-# Space Law
 <ul>
 <li><em><strong>Head of Security</strong></em> and especially <em><strong>Warden</strong></em> should be very familiar with space law.</li>
 <li>Security players should strive to fully comprehend Space Law.</li>
